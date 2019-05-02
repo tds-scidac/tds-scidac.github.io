@@ -643,7 +643,7 @@
 .column3,
 .column4
 {
-	width: 30%;
+	width: 20%;
 }
 
 .column1,
@@ -651,7 +651,15 @@
 .column3
 {
 	float: left;
+    margin-left: 3%;
 	margin-right: 3%;
+}
+
+.column1,
+{
+
+    margin-left: 10%;
+
 }
 
 .column4
