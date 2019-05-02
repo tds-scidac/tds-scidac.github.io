@@ -437,7 +437,8 @@
 
 	#wrapper2
 	{
-		background: rgb(67, 113, 214);;
+		background: #7bd5ff;;
+        background-image: linear-gradient(to bottom right, #2a57b8, #7bd5ff);
 	}
 
 	#wrapper3
@@ -521,6 +522,7 @@
 	{
 		padding: 0em 0em 0em 0em;
         background: rgb(67, 113, 214);
+        background-image: linear-gradient(to bottom right, #2a57b8, #7bd5ff);
 		text-align: center;
 	}
 
