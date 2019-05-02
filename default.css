@@ -527,9 +527,9 @@
 	#footer .title .byline
 	{
 		letter-spacing: normal;
-		text-transform: capitalize;
+
 		font-size: 1.6em;
-		color: rgba(255,255,255,0.2);
+		color: rgba(255,255,255);
 	}
 
 /*********************************************************************************/
@@ -631,10 +631,9 @@
 
 	.column1,
 	.column2,
-	.column3,
-	.column4
+	.column3,	
 	{
-		width: 282px;
+		width: 33%;
 	}
 
 	.column1,
@@ -645,10 +644,8 @@
 		margin-right: 24px;
 	}
 
-	.column4
-	{
-		float: right;
-	}
+	
+	
 
 /*********************************************************************************/
 /* Three Columns                                                                 */
