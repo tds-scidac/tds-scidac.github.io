@@ -7,7 +7,7 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #1B1B1B url(images/overlay.png) repeat;
+		background: #000 url(images/overlay.png) repeat;
 		font-family: 'Varela Round', sans-serif;
 		font-size: 11pt;
 		font-weight: 400;
@@ -55,7 +55,7 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
+		width: 100%;
 	}
 
 
@@ -317,7 +317,7 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding: 2em 0em;
 	}
 
 	#header
@@ -447,6 +447,13 @@
 		background: #FFF;
 	}
 
+	#wrapper33
+	{
+		overflow: hidden;
+		padding: 0em 0em 8em 0em;
+		background: rgb(242, 243, 244);
+	}
+
 	#wrapper4
 	{
 		overflow: hidden;
@@ -460,8 +467,8 @@
 	#welcome
 	{
 		overflow: hidden;
-		width: 1000px;
-		padding: 8em 100px 8em 100px;
+		width: 80%;
+		padding: 8em 10px 8em 10px;
 		text-align: center;
 		color: rgba(255, 255, 255, 0.842);
 	}
@@ -546,13 +553,13 @@
 	#copyright p
 	{
 		text-align: center;
-		color: rgba(255,255,255,0.2);
+		color: rgba(0,0,0,1);
 	}
 
 	#copyright a
 	{
 		text-decoration: none;
-		color: rgba(255,255,255,0.4);
+		color: rgba(0,0,0,0.8);
 	}
 
 /*********************************************************************************/
@@ -582,70 +589,76 @@
 /* Portfolio                                                                     */
 /*********************************************************************************/
 
-	#portfolio
-	{
-		padding-top: 8em;
-	}
+#portfolio
+{
+	padding-top: 8em;
+}
 
-	#portfolio .box
-	{
-		text-align: center;
-		color: rgba(0,0,0,0.7);
-	}
+#portfolio .box
+{
+	text-align: center;
+	color: rgba(0,0,0,0.7);
+}
 
-	#portfolio h3
-	{
-		display: block;
-		padding-bottom: 1em;
-		text-transform: uppercase;
-		font-size: 1em;
-		color: rgba(0,0,0,0.9);
-	}
+#portfolio h3
+{
+	display: block;
+	padding-bottom: 1em;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: rgba(0,0,0,0.9);
+}
 
-	#portfolio .title
-	{
-		margin-bottom: 5em;
-		text-align: center;
-	}
+#portfolio .title
+{
+	margin-bottom: 5em;
+	text-align: center;
+}
 
-	#portfolio .title h2
-	{
-		color: rgba(0,0,0,0.8);
-	}
+#portfolio .title h2
+{
+	color: rgba(0,0,0,0.8);
+}
 
-	#portfolio .title .byline
-	{
-		letter-spacing: normal;
-		text-transform: capitalize;
-		font-size: 1.6em;
-		color: rgba(0,0,0,0.6);
-	}
+#portfolio .title .byline
+{
+	letter-spacing: normal;
+	text-transform: capitalize;
+	font-size: 1.6em;
+	color: rgba(0,0,0,0.6);
+}
 
-	#portfolio .icon
-	{
-		display: inline-block;
-		margin-bottom: 2em;
-		font-size: 1.6em;
-		color: rgba(0,0,0,0.8);
-	}
+#portfolio .icon
+{
+	display: inline-block;
+	margin-bottom: 2em;
+	font-size: 1.6em;
+	color: rgba(0,0,0,0.8);
+}
 
-	.column1,
-	.column2,
-	.column3,	
-	{
-		width: 33%;
-	}
+.column1,
+.column2,
+.column3,
+.column4
+{
+	width: 30%;
+}
 
-	.column1,
-	.column2,
-	.column3
-	{
-		float: left;
-		margin-right: 24px;
-	}
+.column1,
+.column2,
+.column3
+{
+	float: left;
+	margin-right: 3%;
+}
 
-	
-	
+.column4
+{
+	float: right;
+}
+
+
+
 
 /*********************************************************************************/
 /* Three Columns                                                                 */
@@ -717,3 +730,29 @@
 		border-top-color: #292929;
 	}
 
+
+
+	.grid {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+
+}
+.cell {
+  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  height: 110px;
+  margin-bottom: 50px;
+	text-align: center;
+	position: relative;
+  background-color: #FFF;
+}
+.cell:nth-child(3n) {
+  background-color: #FFF;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
