@@ -46,34 +46,6 @@
             {% endif %}
             {% endfor %}
             </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                {% if config.extra.include_next_prev %}
-                <li {% if not page.previous_page %}class="disabled"{% endif %}>
-                    <a rel="next" {% if page.previous_page %}href="{{ page.previous_page.url }}"{% endif %}>
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </li>
-                <li {% if not page.next_page %}class="disabled"{% endif %}>
-                    <a rel="prev" {% if page.next_page %}href="{{ page.next_page.url }}"{% endif %}>
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </li>
-                {% endif %}
-                {% if config.repo_url %}
-                <li>
-                    <a href="{{ config.repo_url }}">
-                        {% if config.repo_name == 'GitHub' %}
-                            <i class="fa fa-github-square"></i>
-                        {% elif config.repo_name == 'Bitbucket' %}
-                            <i class="fa fa-bitbucket"></i>
-                        {% endif %}
-                        {{ config.repo_name }}
-                    </a>
-                </li>
-                {% endif %}
-            </ul>
         </div>
     </div>
 </div>
