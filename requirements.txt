@@ -1,0 +1,6 @@
+mkdocs==1.0.4
+Markdown==3.0
+PyYAML
+mkdocs-exclude-search
+mkdocs-bibtex
+mkdocs-macros-plugin

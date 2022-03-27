@@ -1,0 +1,59 @@
+site_name: TDS
+site_url: https://tds-scidac.github.io
+docs_dir: 'src'
+
+markdown_extensions:
+- extra  # allow markdown in <div markdown="1">
+- fenced_code  # GitHub style code blocks, e.g. ```python, see https://highlightjs.readthedocs.org/en/latest/css-classes-reference.html for a list of languages
+- footnotes
+- attr_list  # Allow us to add link attributes
+
+#repo_url: https://github.com/tds-scidac/tds-scidac.github.io 
+#remote_name: origin
+
+nav:
+- Home: index.md
+- News: news.md
+- Physics:
+  - 'Control & flux surface destruction': cont-fmr.md
+  - 'Nonlinear MHD leading into disruption': pixie3d.md
+  - 'Thermal quench of core plasmas': gts.md
+  - 'Thermal quench of edge/boundary plasmas': bout.md
+  - 'Collisional-radiative modeling of disrupting plasma': cr.md
+  - 'Kinetic modeling of plasma-wall and plasma-neutral interaction': sheath.md 
+  - 'Multifluid modeling of plasma/neutral interaction and VDE': drekar.md
+  - 'Integrated runaway modeling for current quench': RAMc.md
+- Computing:
+  - 'Algorithmic innovation for anisotropic transport': anisotropic.md
+  - 'MFEM-based implicit MHD solver with AMR': mfem.md
+  - 'PETSc-p4est relativistic Fokker-Planck-Boltzmann solver': rfp.md
+  - 'Scalable hybridized DG and exponential DG for fluid models': hdg.md
+  - 'Uncertainty Quantification': uq.md
+  - 'Machine Learning': ml.md
+- Publications: publications.md
+- Gallery: gallery.md
+- About: about.md
+
+theme:
+  name: mkdocs  # required. Can be anything as long as custom_dir is set correctly below
+  custom_dir: template
+  features:
+    - search.suggest
+
+extra:
+  include_next_prev: false  # turn off next/previous buttons
+
+plugins:
+  - search
+  - macros:
+      include_dir: "src/"
+  - bibtex:
+      bib_file: "src/refs.bib"
+  - exclude-search:
+      exclude:
+        # List of pages that will not be searched
+        - index.md
+
+
+google_analytics: ['UA-101697-3', 'https://tds-scidac.github.io/']
+
