@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/tds.png">
+        <meta name="keywords" content="Tokamak Disruption Simulation, TDS">
+        <meta name="google-site-verification" content="45K56TawSdzbgy-uDtfJdYwp7zaVdL3fIAGYt869wwU" />
+<!--	<title></title>  -->
+        <title>TDS - Tokamak Disruption Simulation SciDAC</title>
+
+        <link href="../css/bootstrap-mfem.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/highlight.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="https://tds-scidac.github.io">TDS</a>
+        </div>
+
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="../news/">News</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                            <li >
+                                 <a href="../cont-fmr/">Control & flux surface destruction</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../pixie3d/">Nonlinear MHD leading into disruption</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../gts/">Thermal quench of core plasmas</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../bout/">Thermal quench of edge/boundary plasmas</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../cr/">Collisional-radiative modeling of disrupting plasma</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../sheath/">Kinetic modeling of plasma-wall and plasma-neutral interaction</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../drekar/">Multifluid modeling of plasma/neutral interaction and VDE</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../RAMc/">Integrated runaway modeling for current quench</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Computing <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+                            <li >
+                                 <a href="../anisotropic/">Algorithmic innovation for anisotropic transport</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../mfem/">MFEM-based implicit MHD solver with AMR</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../rfp/">PETSc-p4est relativistic Fokker-Planck-Boltzmann solver</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../hdg/">Scalable hybridized DG and exponential DG for fluid models</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../uq/">Uncertainty Quantification</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../ml/">Machine Learning</a>
+                            </li>
+                        
+                    
+                    </ul>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="../publications/">Publications</a>
+                </li>
+            
+            
+            
+            
+            
+                <li >
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="../gallery/">Gallery</a>
+                </li>
+            
+            
+            
+            
+            
+                <li class="active">
+                    <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
+                    <a href="./">About</a>
+                </li>
+            
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        
+        <div class="container">
+            
+            <div class="col-md-3 visible-xs visible-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#about-tds">About TDS</a></li>
+        
+    
+        <li class="main "><a href="#our-team">Our Team</a></li>
+        
+    
+        <li class="main "><a href="#alumni">Alumni</a></li>
+        
+    
+    </ul>
+</div>
+
+<!-- Developer notes:
+  See the MkDocs documentation in https://www.mkdocs.org/dev-guide/themes/#page
+  and the Jinja2 template API in https://tedboy.github.io/jinja2/index.html
+--></div> <!-- toc on top on mobile -->
+            <div class="col-md-9" role="main">
+
+<h2 id="about-tds">About TDS</h2>
+<p>Our Center is supported by the SciDAC program of the U.S. Department
+of Energy, jointly funded by the Office of Fusion Energy Sciences (FES) and
+the Office of Advanced Scientific Computing Research (ASCR).</p>
+<hr />
+<h2 id="our-team">Our Team</h2>
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/X_Tang.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Xianzhu Tang</b> is the Lead PI of the TDS SciDAC Project and the
+Director of the TDS Center. He is a theoretical and computational
+plasma physicist in the Applied Mathematics and Plasma Physics Group
+in the Theoretical Division at Los Alamos National Laboratory, where
+he also serves as the Plasma Physics Team Leader. Xianzhu's research
+covers a broad range of issues in plasma physics and interdisciplinary
+sciences for fusion energy development, including magnetic
+confinement fusion (MCF) and inertial confinement fusion (ICF), as
+well as the intermediate regime of magneto-inertial confinement fusion
+(MIF).  <a href="https://www.researchgate.net/profile/Xianzhu-Tang-2"><b>
+His publications to date</b></a> have advanced the theory and physics
+understanding of magnetic and plasma self-organization, chaotic mixing
+and dynamo, plasma sheath, dust-plasma interaction, plasma-wall
+interaction, radiative power exhaust, particle and energy transport in
+open field line plasmas, runaway electron dynamics, and plasma physics
+effects of self-generated and externally imposed magnetic fields,
+inter-species ion diffusion due to thermodynamic cross terms, and
+kinetic modification of fusion reactivity in the mix and burn of an
+ICF target. His current research focuses on applying advanced
+computing and scientific machine learning/artificial intelligence to
+accelerate fusion energy development.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/J_Shadid.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/profile.cfm?jnshadi"><b>John Shadid</b></a> is the ASCR PI of the TDS SciDAC Project and the Associate Director of the TDS Center. He is a Distinguished Member of the Technical Staff in the Computational Mathematics Department at Sandia National Laboratories and has an appointment as a National Lab Professor in the Mathematics Department at the University of New Mexico. Dr. Shadid received his Ph.D. in Mechanical Engineering from the University of Minnesota in 1989. John has contributed to the areas of applied math, numerical methods, computational algorithms, and software development, for solution methods of highly-nonlinear coupled multiple-time-scale PDE systems. John was co-PI for the Aztec software library that received a 1997 R&D100 award and was one of the very first scalable parallel iterative solver libraries. He has also been lead-PI for several projects developing robust, scalable, implicit finite element reacting flow, MHD, and multifluid electromagnetic plasma system simulation capabilities in support of DOE Office of Science oriented scientific applications. In 2018, he was elected as a SIAM Fellow and in 2019 he received the United States Association of Computational Mechanics (USACM) Thomas J.R. Hughes Medal for Computational Fluid Mechanics. 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/J_Bonilla.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="http://jesusbonilla.com"><b>Jesus Bonilla</b></a> is a Postdoctoral Researcher at Los Alamos National 
+Laboratory. He received his PhD in computational mechanics at the Universitat 
+Politecnica de Catalunya (UPC). His main research interest is the development 
+of finite element (FE) solvers for fluid models of plasma. He is currently 
+focused on Tokamak disruption and mitigation 3D FE modeling. He is also 
+interesed in the development of positivity-preserving FE schemes with implicit 
+time integration.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/a_boozer.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://www.apam.columbia.edu/faculty/allen-boozer"><b>Allen Boozer</b></a> is a professor of Applied Physics at Columbia University and the Institutional PI of the TDS SciDAC Project at Columbia.  His research interests are centered on the fundamental physics and mathematics of non-axisymmetric magnetic confinement of fusion plasmas in both tokamaks and stellarators, and of magnetic reconnection.  He has published 260 articles in referred publications.  His publications have had more than 13,000 citations according to Google Scholar.  Twenty-five have more than a hundred citations each.  He was elected to scientific membership in the German Max Planck Society (Auswärtiges Wissenschafliches Mitglied der Max-Planck-Gesellschaft) (1989), and awarded the Alfvén Prize by the Division of Plasma Physics of the European Physical Society (2010).  Both of these honors were for his contributions to the physics and mathematical foundations of stellarator optimization.  He was also awarded the Kaul prize (2014), the highest scientific award of the Princeton Plasma Physics Laboratory.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/TanBui.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://users.oden.utexas.edu/~tanbui"><b>Tan Bui-Thanh</b></a> is an associate professor, and the endowed William J Murray Jr. Fellow in Engineering No. 4,  of the Oden Institute for Computational Engineering & Sciences, and the Department of Aerospace Engineering & Engineering mechanics at the university of Texas at Austin. He is the Institutional PI of the SciDAC Project at UT Austin. Bui-Thanh obtained his PhD from the Massachusetts Institute of Technology in 2007, Master of Sciences from the Singapore MIT-Alliance in 2003, and Bachelor of Engineering from the Ho Chi Minh City University of Technology (DHBK) in 2001. He has decades of experience and expertise on multidisciplinary research across the boundaries of different branches of computational science, engineering, and mathematics. Bui-Thanh is currently the elected vice president of the SIAM Texas-Louisiana Section, and the elected secretary of the SIAM SIAG/CSE. Bui-Thanh was an NSF DMS-OAC early CAREER recipient, the Oden Institute distinguished research award, and a two-time winner of the Moncrief Faculty Challenging award.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/P_Cagas.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Petr Cagas</b> is a Research Scientist in the Kevin T. Crofton Department of Aerospace and Ocean Engineering at Virginia Tech. He is also a member of the Gkeyll developer team. Prior to this, he was a postdoctoral research and graduate student at Virginia Tech; he got his Masters degree at the Charles University in Prague. His research areas focus on plasma-material interactions, plasma instabilities, and numerical algorithmic development of kinetic discontinuous Galerkin models.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/L_Chacon.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://www.lanl.gov/search-capabilities/profiles/luis-chacon.shtml"><b>Luis Chacon</b></a> is a 
+ Senior Scientist in the Applied Mathematics and
+Plasma Physics group in the Theoretical Division at
+Los Alamos National Laboratory and the ASCR PI of the TDS SciDAC Project at LANL. His research interests include the
+development of modern scalable multiscale algorithms for fluid and
+kinetic modeling of plasmas, with emphasis on implicit time
+integration and spatial adaptivity. He is a Fellow of the American
+Physical Society, and has published about 120 peer reviewed journal
+articles with an h-index of 36.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/J_Colgan.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>James Colgan</b> is a Staff Scientist and  the Group Leader in  the Physics and Chemistry of Materials Group in the Theoretical Division at Los Alamos National Laboratory. He has spent much of his career in the fields of atomic & plasma physics, and recently worked on the production of a new generation of opacity tables for the elements hydrogen through zinc. James has broad interests in atomic structure and atomic collision physics and atomic processes in plasmas. Recently he has been involved in calculations of the emission from laser-produced tin plasmas that help in the understanding of the origin of EUV light from such plasmas. Angular distributions of the outgoing electrons from the electron-impact ionization of helium. Theory (lines) are compared with measurements 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/e_constantinescu.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://www.mcs.anl.gov/~emconsta"><b>Emil Constantinescu</b></a> is a Computational Mathematician at Argonne
+National Laboratory, and a Scientist for CASE in the Computer Science
+Department, University of Chicago. He is the Institutional PI of the TDS SciDAC Project at ANL. His research interests include
+numerical integration methods for complex PDEs, uncertainty
+quantification and statistics.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/m_crockatt.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Michael Crockatt</b> is a Senior Member of the Technical Staff in the Center for Computing Research at Sandia National Laboratories. His research interests include high performance computing, electromagnetic plasma modeling, and radiation transport.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/BenDudson.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Benjamin Daniel Dudson</b> is the lead developer of several community simulation codes, including BOUT++ fluid simulation framework and the FreeGS equilibrium code. Ben's research focuses on theory and simulation of the edge and divertor regions of tokamak plasmas. In 2021 Ben joined the Fusion Energy Sciences group at LLNL from the University of York in the UK, where he had extensive experience of teaching, undergraduate and graduate student supervision and project management
+
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/H_Elman.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://www.cs.umd.edu/users/elman"><b>Howard Elman</b></a> is a Professor in the Department of Computer Science and
+Institute of Advanced Computer Studies at the University of Maryland,
+College Park and affiliate Professor in the Department of Mathematics, where
+he is currently the Director of the Applied Mathematics Program. He is the Institutional PI of the TDS SciDAC Project at Maryland. He
+received his doctorate in Computer Science from Yale University in 1982.  He
+has had visiting positions at Stanford University, the University of
+Manchester Institute of Science and Technology and the University of Oxford.
+He is a SIAM Fellow, currently serves as Vice President for Publications at SIAM,
+and has served as Editor-in-Chief of SIAM Journal of Scientific Computing.
+His research concerns numerical solution of partial differential equations, sparse 
+matrix methods and uncertainty quantification.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/C_Fontes.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Christopher Fontes</b> has been a member of XCP-Division (formerly X-Division) at LANL since 1994. His areas of expertise include the theory and calculation of fundamental atomic physics data (e.g. atomic structure, cross sections, etc.), and their use in plasma kinetics and spectral modeling simulations. He is a primary author of the Los Alamos suite of relativistic modeling codes, which has been developed over the past 30 years to model a wide range of plasmas. Applications include the modeling of low-density (astrophysical), mid-density (magnetic fusion), and high-density (inertial confinement fusion) plasmas under both local thermodynamic equilibrium (LTE) and the more challenging non-LTE conditions.
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/N_Garland.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://ngarland.info/research"><b>Nathan Garland</b></a> is a lecturer in Applied Mathematics and Physics at Griffith University, Australia. Prior to joining Griffith, Nathan was a post-doctoral researcher in T-Division at LANL. His areas of research interest are based around computational modelling of plasmas in various applications, and the integration of high-quality atomic input data into plasma modelling frameworks. His research has explored applications including the modeling of low-temperature plasmas and electron transport in liquid discharges, tokamak fusion plasmas, collisional-radiative modelling, deep-learning in plasma modelling, and scattering data and physics of electrons, positrons, muons with atoms and molecules.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/z_jorti.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Zakariae Jorti</b> is a Postdoctoral Research Associate in 
+Applied Mathematics and Plasma Physics Group at Los Alamos 
+National Laboratory. He holds a PhD in Mathematics from Sorbonne 
+University. His research interests focus on numerical linear 
+algebra and scientific computing, and include in particular Krylov 
+subspace methods, preconditioning methods and Mimetic Finite 
+Difference (MFD) method. He has three publications. 
+He is currently working on developing and implementing the 
+MFD-based field/fluid solver component of an integrated 
+fluid-kinetic code to model the vertical displacement events in a 
+tokamak disruption.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/I_Keramidas.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            ﻿<b>Ioannis Keramidas Charidakos</b> is a Postdoctoral Researcher at Los Alamos National Laboratory. He obtained his Ph.D from UT Austin and has held a postdoc position at CU Boulder. His research interests include MHD simulations, tokamak disruptions, edge and scrape-off layer turbulence and Hamiltonian Dynamics for Plasma Physics applications. He has six publications.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/T_kolev.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <a href="https://people.llnl.gov/kolev1"><b>Tzanio Kolev</b></a> is a computational mathematician at the Center for Applied Scientific Computing of Lawrence Livermore National Laboratory where he works on advanced finite element discretization methods for a variety of DOE applications. He is also the project leader of the MFEM finite element library and the director of the Center for Efficient Exascale Discretizations, a co-design center in the Exascale Computing Project. Tzanio’s research interests include the development and analysis of high-order finite element methods, scalable algorithms for adaptive mesh refinement on general unstructured grids, massively parallel preconditioners, discretization-enhanced algebraic multigrid algorithms, and the design and implementation of large-scale scientific software.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/NamiLi.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Nami Li</b> is a postdoc research associate at LLNL. She received her B.S. degree in 2014 and Ph.D. degree in 2019 from School of Physics, Dalian University of Technology, Dalian, China. Her major interests include fluid simulation of plasma physics.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/Y_Li.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Yuzhi Li</b> is a PhD candidate in the Kevin T. Crofton Department of Aerospace and Ocean Engineering at Virginia Tech. His research interests include modeling plasma-material and plasma-neutral interactions for fusion applications and developing particle collision models for particle-in-cell (PIC) codes. 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/K_Lipnikov.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Konstantin Lipnikov</b> is a Senior Scientist in the Applied Mathematics and Plasma Physics group in the Theoretical Division at the Los Alamos National Laboratory. His research interests include development of discretization schemes for flow and transport that preserve or mimic critical mathematical and physical properties of underlying PDEs. He published about 90 papers in peer reviewed journals with an h-index of 38.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/H_Mao.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Haotian Mao</b> is a student guest at Los Alamos National Laboratory, and
+a PhD candidate in the Mechanical and Aerospace Engineering Department,
+University of California, San Diego. His research interests include plasma interaction with neutrals at the edge of tokamak. He has 1
+publication and has received the UC-National Laboratory In-Residence Graduate fellowship.
+
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/R_Maulik.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <a href="https://romit-maulik.github.io"><b>Romit Maulik</b></a> is an Assistant Computational Scientist at Argonne National Laboratory, and a Research Assistant Professor at the Department of Applied Mathematics, Illinois Institute of Technology, Chicago. Previously, he was a Margaret Butler Postdoctoral Fellow at Argonne National Laboratory and obtained his Ph.D. in Mechanical & Aerospace Engineering from Oklahoma State University. His research interests include scientific machine learning, reduced-order modeling, stochastic processes, and computational fluid dynamics. 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/C_McDevitt.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://mcdevitt.mse.ufl.edu"><b>Chris McDevitt</b></a> is an Associate Professor in the Nuclear Engineering Program in the Department of Materials Science and Engineering at the University of Florida and the Institutional PI of the TDS SciDAC Project at the University of Florida. Before moving to the University of Florida he was a staff scientist at Los Alamos National Laboratory and also a visiting Scientist at Ecole Polytechnique. He received his Ph.D. in Physics from the University of California at San Diego in 2008. His research interests include the integrated modeling of tokamak disruptions, the kinetic description of non-thermal particle populations in the context of magnetic and inertial confinement fusion plasmas, and turbulence and transport in magnetized plasmas.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/M_Picklo.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Matthew Picklo</b> is a Computational and Applied Mathematics Ph.D. student at the Colorado School of Mines. He received his Master’s in Computational and Applied Mathematics in 2021 from the Colorado School of Mines, and Bachelor’s degrees in Mathematics and Geological Engineering in 2019 from the University of North Dakota.  His research interests are focused on the numerical analysis of partial differential equations and applications of Smoothness-Increasing Accuracy-Conserving (SIAC) filtering schemes. He is a LANL Information Science and Technology Institute student fellow working with the TDS team on particle data compression.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/J_Rudi.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://www.mcs.anl.gov/~jrudi"><b>Johann Rudi</b></a> (he) is an Argonne Scholar at Argonne National Laboratory's Mathematics and Computer Science division.  Previously, he graduated with a Ph.D. in Computational Science, Engineering, and Mathematics at The University of Texas at Austin; advisors: Prof. Omar Ghattas (he) and Prof. Georg Stadler (he).  Prior to joining The University of Texas, he graduated from the Paderborn University in Germany with the German Diploma degree in a multi-disciplinary program called Techno-Mathematics (the Diploma is comparable to a Master's degree with thesis); advisor: Prof. Angela Kunoth (she).
+His research is interdisciplinary and spans computational aspects of inverse problems (e.g., estimating parameters in physical models governed by ordinary/partial differential equations), quantification of uncertainties in the inferred parameters, large-scale parallel iterative methods for nonlinear and linear systems, and development and implementation of algorithms for high-performance computing (HPC) platforms.  Specifically, he has worked on adjoint-based, sampling-based, and machine learning-based methods for inference, as well as parallel multigrid and Schur complement approximation techniques for nonlinear Stokes equations.  His work has been recognized by honors including the Argonne Wilkinson Fellowship, the George Michael Memorial HPC Fellowship, and the Gordon Bell Prize.
+<!-- He has been collaborating with mathematicians, data scientists, and domain scientists, such as, geophysicists (Earth's mantle convection models), physicists (relativistic electron models), neuroscientists (spiking neuron models), and computer scientists (HPC). -->
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/P_Sharma.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Prashant Sharma</b> is a Postdoctoral researcher in the Applied Mathematics and Plasma physics Group at Los Alamos National Laboratory. He is studying the role of charge-exchange process involving high-Z impurity ions relevant in magnetic fusion plasmas. He is working on the collisional-radiative code to extend it to accommodate charge-exchange process and escape of neutrals from magnetic confinement for simulating magnetic fusion plasma. Prashant completed his PhD from the Jawaharlal Nehru University in 2018. He conducted his research at IUAC where he studied the shaking process and its effect on the charge state evolution of the projectile ions near the Coulomb barrier energies. He then moved to Weizmann Institute of Science to work as a Postdoctoral Researcher in the Department of Department of Particle Physics & Astrophysics, where he investigated investigated the ionization, rotation, and implosion dynamics of different ion species using the plasma spectroscopy methods and plasma modeling.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/B_Srinivasan.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://www.aoe.vt.edu/people/faculty/srinivasan.html"><b>Bhuvana Srinivasan</b></a> is an Associate Professor in the Kevin T. Crofton Department of Aerospace and Ocean Engineering at Virginia Tech and the Institutional PI of TDS SciDAC Project at Virginia Tech.  She was an Assistant Professor at Virginia Tech prior to this appointment.  Before moving to Virginia Tech, she was a staff scientist and a postdoctoral researcher at the Los Alamos National Laboratory. She received her Ph.D. in Aeronautics & Astronautics from the University of Washington.  The research areas in her group include plasma-material interactions in thrusters and magnetic fusion devices, instabilities in high-energy-density fusion and astrophysical plasmas, ionospheric plasma instabilities, and numerical algorithm development for fluid and kinetic models. 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/E_Startsev.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Edward Startsev</b> is a Principal Research Physicist in Theory Department at the Princeton University Plasma Physics Laboratory. 
+His research interests include: plasma physics and nonlinear phenomena, intense charged particle beams, non-neutral plasmas, plasma turbulence, nonlinear wave propagation, plasma-based acceleration of particles in the laboratory and in space, beam-plasma interaction, high energy density plasmas, atomic and quantum physics, and numerical methods for description of plasmas. He is involved in research in many areas of plasma physics with applications to nuclear fusion (heavy ion inertial fusion and magnetic fusion) and accelerator physics. He is the author and co-author of over 115 publications in refereed journals in the area of beam physics and plasma physics.
+
+
+
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/Q_Tang.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Qi Tang</b> is a Staff Scientist in the Applied Mathematics and Plasma Physics Group in the Theoretical Division at Los Alamos National Laboratory. He received his PhD in applied math from Michigan State University in 2015 and BS in math & applied math from Zhejiang University in 2010. Before joining LANL in 2018 he was the Eliza Ricketts Foundation Postdoctoral Fellow at Rensselaer Polytechnic Institute. His research interests include: compressible and incompressible MHD, kinetic modeling, scalable numerical algorithms, multi-physics and multi-scale problems, and scientific machine learning. 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/WX_Wang.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Weixing Wang</b> is a principal research physicist at Princeton Plasma Physics Laboratory and the Institutional PI of the TDS SciDAC Project at PPPL. 
+His professional interests cover theory and computation of plasma micro-instabilities, turbulent 
+and collisional plasma transport in magnetic fusion experiments, physics of plasma confinement, 
+tokamak disruption modeling, gyrokinetic simulation, and advanced simulation algorithms. 
+He is a major architect of several large-scale fusion application codes including 
+Gyrokinetic Tokamak Simulation (GTS) code and GTC-NEO. The major focus of Dr. Wang's recent 
+research is on tokamam thermal quench dynamics, global turbulence and nonlocal transport, 
+plasma flow self-organization, plasma self-driven current generation, and transport barrier formation. 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/G_Wimmer.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Golo Wimmer</b> is a Postdoctoral Researcher at Los Alamos National Laboratory. He received his PhD in applied mathematics at Imperial College London, within the Center for Doctoral Training for Mathematics of Planet Earth. His current research is centered on the development of compatible finite element models for extended magnetohydrodynamics, with a theoretical focus on structure preserving methods, and an applied one on tokamak disruption and mitigation.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/XQXu.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://people.llnl.gov/xu2"><b>Xueqiao Xu</b></a> is a senior theoretical and computational plasma physicist at Lawrence Livermore National Laboratory, specialized in boundary plasma physics, high performance computing, and Artificial Intelligent / Machine Learning. He is the Institutional PI of the TDS SciDAC Project at LLNL. Xueqiao is a Fellow of the American Physical Society, and has published  about 168 publications with a total citation of 8236, an h-index of 45, and an i10-index of 117 (Google Scholar). He is a co-author of 2014 Nuclear Fusion Prize paper with Dr Phil Snyder. He is the original developer of the BOUT code and co-developer of the BOUT++ code, jointly with University of York, and he has extensive experience of mentoring PhD students, postdocs and junior staff.
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/M_Yoo.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Min-Gu Yoo</b> is a postdoctoral associate research physicist at Princeton Plasma Physics Laboratory.
+He received a Ph. D. in Nuclear Engineering from Seoul National University in 2017.
+His research interests include transport mechanisms of magnetic fusion plasmas, such as plasma start-up and disruption, 
+and the development of computational codes based on the first-principles modeling such as the gyrokinetic particle simulations.
+He has publications on plasma start-up (Nat. Commun. 9 3523 (2018)) and thermal quench physics (Nucl. Fusion 61 126036 (2021)).
+He has received the awards of "Young Scientist in Plasma Physics" by the Korean Physical Society (2019) 
+and the "Young Researcher Award (U40)" by the Association of Asia-Pacific Physical Societies (2021).
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/M_Zammit.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Mark Zammit</b> is a Staff Scientist at Los Alamos National Laboratory. Mark’s background is in atomic and molecular collision physics, collisional radiative modeling, and opacities. He has developed several general codes, such as the ab initio molecular convergent close-coupling approach for calculating benchmark electron-molecule scattering cross sections, and a suite of codes for calculating molecular opacities of equilibrium and non-equilibrium plasmas. He has also contributed to several other areas, such as the formulation of analytic collision models for particle Monte Carlo plasma simulations and the development of line-broadening theory. He is currently involved in a collaboration with the International Atomic Energy Agency Atomic and Molecular Data Unit, and notably with colleagues calculated benchmark electron collision cross section data sets for fusion relevant species H<sub>2</sub><sup>+</sup>, H<sub>2</sub> and the isotopologues (D<sub>2</sub><sup>+</sup>, DT, T<sub>2</sub>, etc.). 
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/Y_Zhang.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Yanzeng Zhang</b> is a Director's Postdoc Fellow in the Applied Mathematics and Plasma Physics group in the Theoretical Division at Los Alamos National Laboratory. He received a Ph.D. in Engineering Physics from the University of California San Diego (UCSD) in 2020 and was awarded UCSD MAE Department Distinguished Fellowship. His research interests include modeling and simulating the plasma particle and power exhaust, thermal quench, plasma-neutral interaction, and turbulence.  
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/B_Zhu.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <a href="https://people.llnl.gov/zhu12"><b>Ben Zhu</b></a> is a theoretical and computational plasma physicist in the Fusion Energy Science Program at Lawrence Livermore National Laboratory. He received his Ph.D. in physics from Dartmouth College in 2017. His research interests include fluid and kinetic theories; basic plasma instabilities; turbulence, transport, and disruption processes in the magnetic confined fusion devices;  scientific computing; machine learning applications in plasma physics and fusion applications.
+        </p>
+    </div>
+</div>
+
+<hr />
+<h2 id="alumni">Alumni</h2>
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/JianGuoChen.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <b>Jianguo Chen</b> was a student under Dr. Xueqiao Xu supervision. He received his B.S. degree in 2013 and Ph.D. degree in 2018 from School of Physics, Peking University, Beijing, China. His major interests include Landau-Fluid simulation of plasma physics.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/S_Conde.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <b>Sidafa Conde</b> is a developer for the  Drekar FE resistive MHD code and contributed implicit / explicit (IMEX) time-integration, and adaptive time step control algorithms as well as general FE 
+ Software technologies. The general time integration algorithms are delivered in the Trilinos scientific software library.
+ Sidafa worked on the TDS project as postdoc, and as an early career senior member of technical staff in the Computational Mathematics Department at Sandia National Laboratories. 
+ Sidafa received his PhD in Engineering and Applied Science at the University of Massachusetts Dartmouth. His research interests include: high performance scientific computing,  
+ numerical methods for multiple-time-scale nonlinear coupled PDEs, temporal and spatial discretizations of PDEs, applications to computational fluid dynamics, and magnetohydrodynamic systems modeling. 
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/J_Li.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+             <a href="https://dsxt.ustc.edu.cn/zj_js.asp?zzid=7423"><b>Jun Li</b></a> is a theoretical and computational research scientist in University of Science and Technology of China (USTC). He received his PhD in University of Rochester, NY in 2016. Then he had two postdoctoral research periods in UC San Diego and LANL, respectively. In 2021, he started his new career in USTC until present. When he was at LANL, he worked in the TDS team and was in charge of the VPIC particle-in-cell simulations of thermal quench of an open field line plasma, a key thrust in the TDS project. His research interests cover multiple fields of both inertial and magnetic confinement fusion, including laser plasma instabilities, hydrodynamic instabilities, tokamak disruptions, etc.
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/S_Liu.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <a href="https://mathweb.ucsd.edu/~shl083"><b>Shuang Liu</b></a> is a SEW Assistant Professor at the Department of Mathematics of UCSD. Before that, she was a Postdoc Research Associate in the group of Applied Mathematics and Plasma Physics at Los Alamos National Laboratory. She received her PhD in 2019 from the Department of Mathematics of the University of South Carolina under Prof. Xinfeng Liu.
+
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/Z_Peng.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <a href="https://zhichaopengmath.github.io"><b>Zhichao Peng</b></a> is a postdoctoral research associate in the Department of Mathematics at Michigan State University. Zhichao received his Ph.D. in Mathematics from Rensseelaer Polytechnic Institute in 2020. He was a Graduate Research Assistant during the summer 2019 at Los Alamos National Laboratory. His research interests include numerical methods for multiscale kinetic problems, computational electromagnetics, model order reduction, finite element methods and high performance scientific computing.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <img src="../bios/B_Shen.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-md-10">
+        <br><p>
+
+            <a href="http://boshen.blogs.rice.edu"><b>Bo Shen</b></a> is a PhD candidate in the Department of Computational and Applied Mathematics at Rice University. He was a Graduate Research Assistant during the summer 2021 at Los Alamos National Laboratory. His research interests lie in the interdisciplinary area of computational physics and applied mathematics, particularly, in developing numerical methods for coupled flow, geomechanics and plasma physics; multi-numerics; high performance computing; machine learning.
+
+        </p>
+    </div>
+</div></div>
+            <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#about-tds">About TDS</a></li>
+        
+    
+        <li class="main "><a href="#our-team">Our Team</a></li>
+        
+    
+        <li class="main "><a href="#alumni">Alumni</a></li>
+        
+    
+    </ul>
+</div>
+
+<!-- Developer notes:
+  See the MkDocs documentation in https://www.mkdocs.org/dev-guide/themes/#page
+  and the Jinja2 template API in https://tedboy.github.io/jinja2/index.html
+--></div>
+            
+        </div>
+        
+
+        <footer class="footer">
+           <div class="container">
+               <p class="text-muted alignright">Approved for public release; distribution is unlimited.</p>
+              <p class="text-muted alignleft">
+                  Developed by the <a href="/about/">TDS team</a> at
+                  <a href="https://www.lanl.gov/">LANL</a> based on
+                  <a href="https://mfem.org/">MFEM</a> webpage template.</p>
+           </div>
+        </footer>
+        
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../js/retina.min.js"></script>
+        <!-- <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script> --> <!-- file missing in repo -->
+        <script src="../search/main.js"></script>
+    </body>
+</html>
