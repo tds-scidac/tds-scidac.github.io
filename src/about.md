@@ -32,7 +32,7 @@ the Office of Advanced Scientific Computing Research (ASCR).
 
 ## Alumni
 
-{% set members = ['JianGuoChen', 'S_Conde', 'M_Ding', 'K_Huang', 'J_Li', 'S_Liu', 'Z_Peng', 'B_Shen', 'T_Wildey'] %}
+{% set members = ['JianGuoChen', 'S_Conde', 'M_Ding', 'K_Huang', 'J_Li', 'S_Liu', 'Z_Peng', 'B_Shen'] %}
 
 {% for member in members %}
 <div class="row">
