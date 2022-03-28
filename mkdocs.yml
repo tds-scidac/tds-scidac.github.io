@@ -26,7 +26,7 @@ nav:
 - Computing:
   - 'Algorithmic innovation for anisotropic transport': anisotropic.md
   - 'MFEM-based implicit MHD solver with AMR': mfem.md
-  - 'PETSc-p4est relativistic Fokker-Planck-Boltzmann solver': rfp.md
+  - 'PETSc-p4est relativistic Fokker-Planck-Boltzmann solver': fokkerplanck.md
   - 'Scalable hybridized DG and exponential DG for fluid models': hdg.md
   - 'Uncertainty Quantification': uq.md
   - 'Machine Learning': ml.md
