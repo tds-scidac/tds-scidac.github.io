@@ -8,7 +8,7 @@ the Office of Advanced Scientific Computing Research (ASCR).
 
 ## Our Team 
 
-{% set members = ['X_Tang', 'J_Shadid', 'O_Beznosov', 'J_Bonilla', 'a_boozer', 'TanBui', 'P_Cagas', 
+{% set members = ['X_Tang', 'J_Shadid', 'O_Beznosov', 'J_Bonilla', 'a_boozer', 'J_Burby', 'TanBui', 'P_Cagas', 
 'L_Chacon', 'HK_Chung', 'J_Colgan', 'e_constantinescu', 'm_crockatt', 'BenDudson',
 'H_Elman', 'C_Fontes', 'N_Garland', 'Z_Guo', 'z_jorti', 'I_Keramidas', 'T_kolev', 'NamiLi', 'Y_Li', 'K_Lipnikov', 'H_Mao', 'R_Maulik',   
 'C_McDevitt',  'M_Picklo', 'J_Rudi', 'P_Sharma', 'B_Srinivasan', 'E_Startsev', 'Q_Tang', 'WX_Wang', 'G_Wimmer', 			
@@ -32,7 +32,7 @@ the Office of Advanced Scientific Computing Research (ASCR).
 
 ## Alumni
 
-{% set members = ['JianGuoChen', 'S_Conde', 'J_Li', 'S_Liu', 'Z_Peng', 'B_Shen'] %}
+{% set members = ['JianGuoChen', 'S_Conde', 'M_Ding', 'K_Huang', 'J_Li', 'S_Liu', 'Z_Peng', 'B_Shen'] %}
 
 {% for member in members %}
 <div class="row">
