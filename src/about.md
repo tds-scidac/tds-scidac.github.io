@@ -8,7 +8,7 @@ the Office of Advanced Scientific Computing Research (ASCR).
 
 ## Our Team 
 
-{% set members = ['X_Tang', 'J_Shadid', 'J_Bonilla', 'a_boozer', 'TanBui', 'P_Cagas', 
+{% set members = ['X_Tang', 'J_Shadid', 'O_Beznosov', 'J_Bonilla', 'a_boozer', 'TanBui', 'P_Cagas', 
 'L_Chacon', 'J_Colgan', 'e_constantinescu', 'm_crockatt', 'BenDudson',
 'H_Elman', 'C_Fontes', 'N_Garland', 'z_jorti', 'I_Keramidas', 'T_kolev', 'NamiLi', 'Y_Li', 'K_Lipnikov', 'H_Mao', 'R_Maulik',   
 'C_McDevitt',  'M_Picklo', 'J_Rudi', 'P_Sharma', 'B_Srinivasan', 'E_Startsev', 'Q_Tang', 'WX_Wang', 'G_Wimmer', 			
