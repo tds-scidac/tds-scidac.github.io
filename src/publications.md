@@ -33,7 +33,7 @@
 1. J. Lee, T. Bui-Thanh, U. Villa,  and O. Ghattas, Forward and inverse modelings of Fault Transmissibility in Subsurface Flows, *submitted*, **2021**.
 1. T. Bui-Thanh, Q. Li,  and L. Zepeda-Nunez, Bridging and Improving Theoretical and Computational Electric Impedance Tomography via Data Completion, *submitted*, **2021**.
 1. V. H. Nguyen, and T. Bui-Thanh,  Model-Constrained Deep Learning Approaches for Inverse Problems, *submitted*, **2021**.
-
+1. H. C. Elman, J. Liang and T. Sanchez-Vizuet, [Surrogate approximation of the Grad-Shafranov free boundary problem via stochastic collocation on sparse grids](https://www.sciencedirect.com/science/article/pii/S0021999121005945?dgcid=coauthor), *Journal of Computational Physics*, 448, **2021**.
 
 ----
 

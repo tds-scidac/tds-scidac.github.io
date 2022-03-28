@@ -16,9 +16,8 @@ To make changes to the website you will need an install of Python version >= 3.6
   * `conda install -c conda-forge mkdocs=1.0.4`
   * `conda install -c conda-forge pyyaml`
   * `conda install -c conda-forge markdown==3.1.1`
-  * `conda install -c conda-forge mkdocs-macros-plugin`
+  * `conda install -c conda-forge mkdocs-macros-plugin` or `pip install --upgrade --user mkdocs-macros-plugin`
   * `pip install --upgrade --user mkdocs-bibtex`
-  * `pip install --upgrade --user mkdocs-macros-plugin`
 - newer versions may not generate correct front page (to see the installed version, use `pip show mkdocs`)
 - clone this repo,
 - edit or add some `.md` files (you may also need to update the `mkdocs.yml` config),
