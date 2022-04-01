@@ -214,6 +214,8 @@
         
             <li><a href="#exploration-of-machine-learning-for-reduced-order-models-of-resistive-mhd">Exploration of machine learning for reduced order models of resistive MHD</a></li>
         
+            <li><a href="#adaptive-training-for-cr-surrogates">Adaptive training for CR surrogates</a></li>
+        
     
     </ul>
 </div>
@@ -292,6 +294,14 @@ This initial study was incomplete and more work is require to show the promise o
     <div class="col-md-3"></div>
 </div>
 
+<hr />
+<h2 id="adaptive-training-for-cr-surrogates">Adaptive training for CR surrogates</h2>
+<p>Highlight by Nathan Garland (Griffith University, Australia), Romit Maulik (ANL), Qi Tang (LANL), Xian-Zhu Tang (LANL),
+and Prasanna Balaprakash (ANL)</p>
+<p><img alt="" src="../img/gallery/ml_collage_adaptive.png" /></p>
+<p>Reliable plasma transport modeling for magnetic confinement fusion depends on accurately resolving the ion charge state distribution and radiative power losses of the plasma. These quantities can be obtained from solutions of a collisional-radiative (CR) model at each time step within a plasma transport simulation. However, even compact, approximate CR models can be computationally onerous to evaluate, and in-situ evaluations of these models within a coupled plasma transport code can lead to a rigid bottleneck. A way to bypass this bottleneck is to deploy artificial neural network surrogates for rapid evaluations of the necessary plasma quantities. However, one issue with training an accurate artificial neural network surrogate is the reliance on a sufficiently large and representative data set for both training and validation, which can be time-consuming to generate. In this study we further explore a data-driven active learning and training scheme to allow autonomous adaptive sampling of the problem parameter space that ensures a sufficiently large and meaningful set of training data assembled for the surrogate training. Our numerical experiments show that in order to produce a comparably accurate CR surrogate, the proposed approach requires a total number of data samples that is an order-of-magnitude smaller than a conventional approach.</p>
+<p>Paper <a href="https://doi.org/10.48550/arXiv.2112.05325">N. A. Garland, R. Maulik, Q. Tang,  X.-Z. Tang, and  P. Balaprakash. Efficient training of artificial neural network surrogates for a collisional-radiative model through adaptive parameter space sampling, 2022</a></p>
+<hr />
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script></div>
@@ -307,6 +317,8 @@ This initial study was incomplete and more work is require to show the promise o
             <li><a href="#scientific-deep-learning-dl-methods-for-forward-and-inverse-problems">Scientific Deep learning (DL) methods for forward and inverse problems</a></li>
         
             <li><a href="#exploration-of-machine-learning-for-reduced-order-models-of-resistive-mhd">Exploration of machine learning for reduced order models of resistive MHD</a></li>
+        
+            <li><a href="#adaptive-training-for-cr-surrogates">Adaptive training for CR surrogates</a></li>
         
     
     </ul>
