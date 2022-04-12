@@ -6,9 +6,9 @@
 1. Q. Tang, L. Chacon, T. V. Kolev, J. N. Shadid and X.-Z. Tang. [An adaptive scalable fully implicit algorithm based on stabilized finite element for reduced visco-resistive MHD](https://doi.org/10.1016/j.jcp.2022.110967), *Journal of Computational Physics*, 454:110967, **2022**.
 1. N. A. Garland, H.-K. Chung, M. C. Zammit, C. J. McDevitt, J. Colgan, C. J. Fontes and X.-Z. Tang. [Understanding how minority relativistic electron populations may dominate charge state balance and radiative cooling of a post-thermal quench tokamak plasma](https://doi.org/10.1063/5.0071996), *Physics of Plasmas*, 29:012504, **2022**.
 1. P. Ohm, T. Wiesner, E. Cyr, J. J. Hu, J. N. Shadid, and R. S. Tuminaro. [A monolithic algebraic multigrid framework for multiphysics applications with examples from resistive MHD](https://etna.math.kent.edu/vol.55.2022/pp365-390.dir/pp365-390.pdf), *Electronic Trans. Numerical Analysis*, 55:365-390, **2022**.
-1. S. Conde, I. Fekete, J. N. Shadid, [Embedded pairs for optimal explicit strong stability preserving Runge-Kutta methods](https://arxiv.org/abs/1806.08693), *J. Computational and Applied Math*, to appear, **2022**.
+1. S. Conde, I. Fekete, J. N. Shadid, [Embedded pairs for optimal explicit strong stability preserving Runge-Kutta methods](https://arxiv.org/abs/1806.08693), *Journal Computational and Applied Math*, *to appear*, **2022**.
 1. A. H. Boozer. [Local analysis of fast magnetic reconnection](https://arxiv.org/pdf/2202.09494.pdf). *submitted*, **2022**.
-1. M. M. Crockatt, S. Mabuza, J. N. Shadid, S. Conde, T. M. Smith and R. P. Pawlowski. An implicit monolithic AFC stabilization method for the CG finite element discretization of the fully-ionized collisionless multifluid EM plasma system, *submitted*, **2022**.
+1. M. M. Crockatt, S. Mabuza, J. N. Shadid, S. Conde, T. M. Smith and R. P. Pawlowski. An implicit monolithic AFC stabilization method for the CG finite element discretization of the fully-ionized ideal multifluid electromagnetic plasma system, *Journal of Computational Physics*, *to appear*, **2022**.
 1. M.-G. Yoo, W. X. Wang, E. Startsev, C. H. Ma, S. Ethier, J. Chen, and X.-Z. Tang. The 3-D magnetic topology and plasma dynamics in open stochastic magnetic field lines, *submitted*, **2022**.
 
 
