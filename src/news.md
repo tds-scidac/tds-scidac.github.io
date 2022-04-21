@@ -2,6 +2,7 @@
 
 &nbsp;       | |
 ------------ | -----------------------------------------------------------------
+Apr 21, 2022 | Romit Maulik (ANL) will start a new position at the [Department of Information Science and Technology at Penn State University](https://ist.psu.edu/) as an Assistant Professor while retaining a joint appointment with the MCS division at ANL. He will continue to work with TDS for the [scientific machine learning thrust](ml.md) such as ML-based collisional radiative surrogates.
 Apr 13, 2022 | Johann Rudi (ANL) will start a new position at the [Department of Mathematics at Virginia Tech](https://math.vt.edu/) as an Assistant Professor.  Johann will continue working with the TDS team on the project [PETSc-p4est relativistic Fokker-Planck-Boltzmann solver](https://tds-scidac.github.io/fokkerplanck/).
 Apr 11, 2022 | Luis Chacon (LANL) organized two-sessions of presentations at the [2022 Copper Mountain Conference on Iterative Methods](https://easychair.org/smart-program/CM2022/2022-04-04.html) on “Scalable Solvers for Coupled Multiphysics” where a number of TDS and international researchers presented work related to scalable plasma physics solvers. 
 Apr 11, 2022 | John Shadid (SNL) co-chairs, along with Luke Olson of U. Illinois, the [2022 Copper Mountain Conference on Iterative Methods](https://easychair.org/smart-program/CM2022/) (CMCIM). CMCIM is widely regarded as one of the premier international conferences on iterative methods. Advanced iterative methods are often critical numerical methods for scalable solution methods.
