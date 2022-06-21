@@ -29,6 +29,7 @@ tokamak simulations.
 
 Date             | Message
 ---------------- | -----------------------------------------------------------------
+Jun 21, 2022     | Luis Chacon (LANL) was awarded the [EO Lawrence Award](https://science.osti.gov/lawrence).
 Apr 11, 2022     | Luis Chacon (LANL) organized 2 sessions at the [CMCIM](https://easychair.org/smart-program/CM2022/2022-04-04.html).
 Apr 11, 2022     | John Shadid (SNL) co-chairs the [CMCIM](https://easychair.org/smart-program/CM2022/).
 Apr 4, 2022      | TDS team members attend [Sherwood Fusion Theory Conference](https://www.sherwoodtheory.org/sw2022/index.php). 
