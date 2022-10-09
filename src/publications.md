@@ -6,11 +6,12 @@
 1. Q. Tang, L. Chacon, T. V. Kolev, J. N. Shadid and X.-Z. Tang. [An adaptive scalable fully implicit algorithm based on stabilized finite element for reduced visco-resistive MHD](https://doi.org/10.1016/j.jcp.2022.110967), *Journal of Computational Physics*, 454:110967, **2022**.
 1. N. A. Garland, H.-K. Chung, M. C. Zammit, C. J. McDevitt, J. Colgan, C. J. Fontes and X.-Z. Tang. [Understanding how minority relativistic electron populations may dominate charge state balance and radiative cooling of a post-thermal quench tokamak plasma](https://doi.org/10.1063/5.0071996), *Physics of Plasmas*, 29:012504, **2022**.
 1. P. Ohm, T. Wiesner, E. Cyr, J. J. Hu, J. N. Shadid, and R. S. Tuminaro. [A monolithic algebraic multigrid framework for multiphysics applications with examples from resistive MHD](https://etna.math.kent.edu/vol.55.2022/pp365-390.dir/pp365-390.pdf), *Electronic Trans. Numerical Analysis*, 55:365-390, **2022**.
-1. S. Conde, I. Fekete, J. N. Shadid, [Embedded pairs for optimal explicit strong stability preserving Runge-Kutta methods](https://arxiv.org/abs/1806.08693), *Journal Computational and Applied Math*, *to appear*, **2022**.
-1. A. H. Boozer. [Local analysis of fast magnetic reconnection](https://arxiv.org/pdf/2202.09494.pdf). *submitted*, **2022**.
+1. S. Conde, I. Fekete, J. N. Shadid, [Embedded pairs for optimal explicit strong stability preserving Runge-Kutta methods](https://arxiv.org/abs/1806.08693), *Journal Computational and Applied Math*,  412:114325, **2022**.
+1. A. H. Boozer. [Local analysis of fast magnetic reconnection](https://arxiv.org/pdf/2202.09494.pdf). *Physics of Plasmas*, 29:052104, **2022**.
 1. M. M. Crockatt, S. Mabuza, J. N. Shadid, S. Conde, T. M. Smith and R. P. Pawlowski. An implicit monolithic AFC stabilization method for the CG finite element discretization of the fully-ionized ideal multifluid electromagnetic plasma system, *Journal of Computational Physics*, 464:111228, **2022**.
-1. M.-G. Yoo, W. X. Wang, E. Startsev, C. H. Ma, S. Ethier, J. Chen, and X.-Z. Tang. The 3-D magnetic topology and plasma dynamics in open stochastic magnetic field lines, *submitted*, **2022**.
-
+1. M.-G. Yoo, W. X. Wang, E. Startsev, C. H. Ma, S. Ethier, J. Chen, and X.-Z. Tang. The 3-D magnetic topology and plasma dynamics in open stochastic magnetic field lines, *Physics of Plasmas*, 29:072502, **2022**.
+1. N. A. Garland, R. Maulik, Q. Tang, X.-Z. Tang and P. Balaprakash. [Efficient training of artificial neural network surrogates for a collisional-radiative model through adaptive parameter space sampling](https://arxiv.org/abs/2112.05325), *Machine Learning: Science and Technology*, *to appear*, **2022**.
+1. T. Bui-Thanh, Q. Li,  and L. Zepeda-Nunez, Bridging and Improving Theoretical and Computational Electric Impedance Tomography via Data Completion, *SIAM Journal on Scientific Computing*, 44(3):B668-B693, **2022**.
 
 ----
 
@@ -27,12 +28,10 @@
 1. W. Zhang, G. Rossini, T. Bui-Thanh, and M. Sacks, [The integration of structure and high-fidelity material models in heart valve simulations using machine learning](https://doi.org/10.1002/cnm.3438), *International Journal for Numerical Methods in Biomedical Engineering*,  37(4):e3438, **2021**.
 1. M.-G. Yoo, W. X. Wang, E. Startsev, C. H. Ma, S. Ethier, J. Chen, and X.-Z. Tang. [Collisionless plasma transport mechanisms in stochastic open magnetic field lines in tokamaks](https://doi.org/10.1088/1741-4326/ac30c6), *Nuclear Fusion*, 61:126036, **2021**.
 1. P. Cagas, A. H. Hakim and B. Srinivasan. [A boundary value “reservoir problem” and boundary conditions for multi-moment multifluid simulations of sheaths](https://doi.org/10.1063/5.0024510), *Physics of Plasmas*, 28:014501, **2021**
-1. N. A. Garland, R. Maulik, Q. Tang, X.-Z. Tang and P. Balaprakash. [Efficient training of artificial neural network surrogates for a collisional-radiative model through adaptive parameter space sampling](https://arxiv.org/abs/2112.05325), *submitted*, **2021**.
 1. M. M. Crockatt and J. N. Shadid. [Development, Implementation, and Verification of Partially-Ionized Collisional Multifluid Plasma Models in Drekar](https://doi.org/10.2172/1817837), *Sandia National Laboratories Technical report* SAND2021-7427, **2021**.
 1. I. Tomas, J. N. Shadid, M. M. Crockatt, M. Maier, J.-L. Guermond, R. Pawlowski, [Final report of activities for the LDRD-express project #223796 titled: “Fluid models of charged species transport: numerical methods with mathematically guaranteed properties](https://doi.org/10.2172/1822320), *Sandia National Laboratories Technical report*, SAND2021-11481, **2021** 
 1. S. Muralikrishnan, S. Shannon, T. Bui-Thanh and J. N. Shadid. [A multilevel block preconditioner for the HDG trace system applied to incompressible resistive MHD](https://arxiv.org/abs/2012.07648), *submitted*, **2021**.
 1. J. Lee, T. Bui-Thanh, U. Villa,  and O. Ghattas, Forward and inverse modelings of Fault Transmissibility in Subsurface Flows, *submitted*, **2021**.
-1. T. Bui-Thanh, Q. Li,  and L. Zepeda-Nunez, Bridging and Improving Theoretical and Computational Electric Impedance Tomography via Data Completion, *submitted*, **2021**.
 1. V. H. Nguyen, and T. Bui-Thanh,  Model-Constrained Deep Learning Approaches for Inverse Problems, *submitted*, **2021**.
 1. H. C. Elman, J. Liang and T. Sanchez-Vizuet, [Surrogate approximation of the Grad-Shafranov free boundary problem via stochastic collocation on sparse grids](https://www.sciencedirect.com/science/article/pii/S0021999121005945?dgcid=coauthor), *Journal of Computational Physics*, 448, **2021**.
 
