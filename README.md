@@ -11,7 +11,7 @@ To make changes to the website you will need an install of Python version >= 3.6
   * `pip install --upgrade --user mkdocs-bibtex`
   * `pip install --upgrade --user mkdocs-macros-plugin`
   * `pip install --upgrade --user "jinja2<3.1.0"`
-- or use conda (test it on 09/10/22)
+- or use conda (test it on 10/09/22; python3.10 may not work)
   * `conda create -n web python=3.7`
   * `conda activate web`
   * `conda install -c conda-forge mkdocs=1.0.4`
