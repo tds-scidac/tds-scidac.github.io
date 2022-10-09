@@ -20,6 +20,7 @@ To make changes to the website you will need an install of Python version >= 3.6
   * `conda install -c conda-forge mkdocs-macros-plugin`\
    or `pip install --upgrade --user mkdocs-macros-plugin`
   * `pip install --upgrade --user mkdocs-bibtex`
+  * `pip install --upgrade --user mkdocs-exclude-search`
   * `conda install -c anaconda jinja2==3.0.3`
 - newer versions may not generate correct front page (to see the installed version, use `pip show mkdocs`)
 - clone this repo,
