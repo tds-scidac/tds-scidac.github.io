@@ -1,7 +1,11 @@
 # Publications
 
+## 2023
+1. S. Muralikrishnan, S. Shannon, T. Bui-Thanh and J. N. Shadid. [A multilevel block preconditioner for the HDG trace system applied to incompressible resistive MHD](https://doi.org/10.1016/j.cma.2022.115775), *Comput. Methods Appl. Mech. Engrg.* 404:115775, 2023.
+
 ## 2022
 1. A. H. Boozer. [The rapid destruction of toroidal magnetic surfaces](https://doi.org/10.1063/5.0076363), *Phys. Plasmas*, 29:022301, **2022**
+1. A. H. Boozer. [Magnetic field evolution and reconnection in low resistivity plasmas](https://arxiv.org/pdf/2212.07487.pdf), *submitted*, **2022**
 1. Y. Li, B. Srinivasan, Y. Zhang and X.-Z. Tang. [Bohm Criterion of Plasma Sheaths away from Asymptotic Limits](https://doi.org/10.1103/PhysRevLett.128.085002), *Physical Review Letters*, 128:085002, **2022**
 1. Q. Tang, L. Chacon, T. V. Kolev, J. N. Shadid and X.-Z. Tang. [An adaptive scalable fully implicit algorithm based on stabilized finite element for reduced visco-resistive MHD](https://doi.org/10.1016/j.jcp.2022.110967), *Journal of Computational Physics*, 454:110967, **2022**.
 1. N. A. Garland, H.-K. Chung, M. C. Zammit, C. J. McDevitt, J. Colgan, C. J. Fontes and X.-Z. Tang. [Understanding how minority relativistic electron populations may dominate charge state balance and radiative cooling of a post-thermal quench tokamak plasma](https://doi.org/10.1063/5.0071996), *Physics of Plasmas*, 29:012504, **2022**.
@@ -12,6 +16,9 @@
 1. M.-G. Yoo, W. X. Wang, E. Startsev, C. H. Ma, S. Ethier, J. Chen, and X.-Z. Tang. The 3-D magnetic topology and plasma dynamics in open stochastic magnetic field lines, *Physics of Plasmas*, 29:072502, **2022**.
 1. N. A. Garland, R. Maulik, Q. Tang, X.-Z. Tang and P. Balaprakash. [Efficient training of artificial neural network surrogates for a collisional-radiative model through adaptive parameter space sampling](https://arxiv.org/abs/2112.05325), *Machine Learning: Science and Technology*, *to appear*, **2022**.
 1. T. Bui-Thanh, Q. Li,  and L. Zepeda-Nunez, Bridging and Improving Theoretical and Computational Electric Impedance Tomography via Data Completion, *SIAM Journal on Scientific Computing*, 44(3):B668-B693, **2022**.
+1. M. Maier, J. Shadid, and I. Tomas, [LOCAL-IN-TIME STRUCTURE-PRESERVING FINITE-ELEMENT SCHEMES FOR THE EULER-POISSON EQUATIONS](https://arxiv.org/abs/2207.07860), *submitted*, **2022**.
+1. M. M. Crockatt and J. N. Shadid, A Non-neutral Generalized Ohm’s Law Model for Magnetohydrodynamics in the Two-Fluid Regime, *submitted*, **2022**.
+
 
 ----
 
@@ -30,7 +37,6 @@
 1. P. Cagas, A. H. Hakim and B. Srinivasan. [A boundary value “reservoir problem” and boundary conditions for multi-moment multifluid simulations of sheaths](https://doi.org/10.1063/5.0024510), *Physics of Plasmas*, 28:014501, **2021**
 1. M. M. Crockatt and J. N. Shadid. [Development, Implementation, and Verification of Partially-Ionized Collisional Multifluid Plasma Models in Drekar](https://doi.org/10.2172/1817837), *Sandia National Laboratories Technical report* SAND2021-7427, **2021**.
 1. I. Tomas, J. N. Shadid, M. M. Crockatt, M. Maier, J.-L. Guermond, R. Pawlowski, [Final report of activities for the LDRD-express project #223796 titled: “Fluid models of charged species transport: numerical methods with mathematically guaranteed properties](https://doi.org/10.2172/1822320), *Sandia National Laboratories Technical report*, SAND2021-11481, **2021** 
-1. S. Muralikrishnan, S. Shannon, T. Bui-Thanh and J. N. Shadid. [A multilevel block preconditioner for the HDG trace system applied to incompressible resistive MHD](https://arxiv.org/abs/2012.07648), *submitted*, **2021**.
 1. J. Lee, T. Bui-Thanh, U. Villa,  and O. Ghattas, Forward and inverse modelings of Fault Transmissibility in Subsurface Flows, *submitted*, **2021**.
 1. V. H. Nguyen, and T. Bui-Thanh,  Model-Constrained Deep Learning Approaches for Inverse Problems, *submitted*, **2021**.
 1. H. C. Elman, J. Liang and T. Sanchez-Vizuet, [Surrogate approximation of the Grad-Shafranov free boundary problem via stochastic collocation on sparse grids](https://www.sciencedirect.com/science/article/pii/S0021999121005945?dgcid=coauthor), *Journal of Computational Physics*, 448, **2021**.
