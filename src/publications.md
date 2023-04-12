@@ -2,6 +2,11 @@
 
 ## 2023
 1. S. Muralikrishnan, S. Shannon, T. Bui-Thanh and J. N. Shadid. [A multilevel block preconditioner for the HDG trace system applied to incompressible resistive MHD](https://doi.org/10.1016/j.cma.2022.115775), *Comput. Methods Appl. Mech. Engrg.* 404:115775, 2023.
+1. M. Maier, J. N. Shadid and I. Tomas, [Local-in-time structure-preserving finite-element schemes for the Euler-Poisson equations](https://arxiv.org/abs/2207.07860), *Communications in Computational Physics*, *to appear*, **2023**. 
+1. M. M. Crockatt and J. N. Shadid, A non-neutral generalized Ohm’s law model for magnetohydrodynamics in the two-fluid regime, *Physics of Plasmas*, *to appear*, **2023**.
+1. J.-U. Chen, S. Kang, T. Bui-Thanh, and J. N. Shadid, UNIFIED HP-HDG FRAMEWORKS FOR FRIEDRICHS' PDE SYSTEMS, *Computers & Mathematics with Application*, *submitted*, **2023**.
+1. Z. Jorti, Q. Tang, K. Lipnikov and X.-Z. Tang [A mimetic finite difference based quasi-static magnetohydrodynamic solver for force-free plasmas in tokamak disruptions](https://arxiv.org/abs/2303.08337), *submitted*, **2023**.
+1. J. Rudi, M. Heldman, E. M. Constantinescua, Q. Tang and X.-Z. Tang [Scalable Implicit Solvers with Dynamic Mesh Adaptation for a Relativistic Drift-Kinetic Fokker-Planck-Boltzmann Model](https://arxiv.org/abs/2303.17019), *submitted*, **2023**.
 
 ## 2022
 1. A. H. Boozer. [The rapid destruction of toroidal magnetic surfaces](https://doi.org/10.1063/5.0076363), *Phys. Plasmas*, 29:022301, **2022**
@@ -14,10 +19,8 @@
 1. A. H. Boozer. [Local analysis of fast magnetic reconnection](https://arxiv.org/pdf/2202.09494.pdf). *Physics of Plasmas*, 29:052104, **2022**.
 1. M. M. Crockatt, S. Mabuza, J. N. Shadid, S. Conde, T. M. Smith and R. P. Pawlowski. [An implicit monolithic AFC stabilization method for the CG finite element discretization of the fully-ionized ideal multifluid electromagnetic plasma system](https://doi.org/10.1016/j.jcp.2022.111228), *Journal of Computational Physics*, 464:111228, **2022**.
 1. M.-G. Yoo, W. X. Wang, E. Startsev, C. H. Ma, S. Ethier, J. Chen, and X.-Z. Tang. [The 3-D magnetic topology and plasma dynamics in open stochastic magnetic field lines](https://aip.scitation.org/doi/10.1063/5.0085304), *Physics of Plasmas*, 29:072502, **2022**.
-1. N. A. Garland, R. Maulik, Q. Tang, X.-Z. Tang and P. Balaprakash. [Efficient training of artificial neural network surrogates for a collisional-radiative model through adaptive parameter space sampling](https://arxiv.org/abs/2112.05325), *Machine Learning: Science and Technology*, *to appear*, **2022**.
+1. N. A. Garland, R. Maulik, Q. Tang, X.-Z. Tang and P. Balaprakash. [Efficient data acquisition and training of collisional-radiative model artificial neural network surrogates through adaptive parameter space sampling](https://iopscience.iop.org/article/10.1088/2632-2153/ac93e7/meta), *Machine Learning: Science and Technology*, 3(4):045003, **2022**.
 1. T. Bui-Thanh, Q. Li,  and L. Zepeda-Nunez, [Bridging and Improving Theoretical and Computational Electric Impedance Tomography via Data Completion](https://epubs.siam.org/doi/10.1137/21M141703X), *SIAM Journal on Scientific Computing*, 44(3):B668-B693, **2022**.
-1. M. Maier, J. Shadid, and I. Tomas, [LOCAL-IN-TIME STRUCTURE-PRESERVING FINITE-ELEMENT SCHEMES FOR THE EULER-POISSON EQUATIONS](https://arxiv.org/abs/2207.07860), *submitted*, **2022**.
-1. M. M. Crockatt and J. N. Shadid, A Non-neutral Generalized Ohm’s Law Model for Magnetohydrodynamics in the Two-Fluid Regime, *submitted*, **2022**.
 
 
 ----
