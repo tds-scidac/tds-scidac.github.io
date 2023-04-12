@@ -71,6 +71,22 @@ img.teamphoto {
     box-shadow: 4px 4px 4px #999;
 }
 
+.awardPhoto {
+    margin-top: 10.5px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    box-shadow: 4px 4px 4px #9999995a;
+}
+
+.award {
+    background-image: linear-gradient(to bottom right, white, #ddd);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 p.centered {
     margin-left: auto;
     margin-right: auto;
@@ -273,4 +289,20 @@ input {
   left: auto;
   right: auto;
   color: #000;
+}
+
+img.institution {
+    padding: 0.5em 0;
+    margin: 0;
+    max-height: 7em;
+    max-width: 15em;
+}
+
+@media (min-width: 768px) {
+    img.institution {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
 }
