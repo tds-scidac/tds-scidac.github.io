@@ -63,9 +63,9 @@
             
             
             
-                <li >
+                <li class="active">
                     <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
-                    <a href="../awards/">Awards</a>
+                    <a href="./">Awards</a>
                 </li>
             
             
@@ -131,7 +131,7 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Computing <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -154,8 +154,8 @@
                         
                     
                         
-                            <li class="active">
-                                 <a href="./">Scalable hybridized DG and exponential DG for fluid models</a>
+                            <li >
+                                 <a href="../hdg/">Scalable hybridized DG and exponential DG for fluid models</a>
                             </li>
                         
                     
@@ -213,13 +213,7 @@
             <div class="col-md-3 visible-xs visible-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#scalable-hybridized-dg-and-exponential-dg-for-fluid-models">Scalable Hybridized DG and Exponential DG for Fluid Models</a></li>
-        
-            <li><a href="#overview">Overview</a></li>
-        
-            <li><a href="#scalable-high-order-hdg-based-mhd-solver">Scalable, high-order HDG-based MHD solver</a></li>
-        
-            <li><a href="#kelvin-helmholtz-instability-using-imex-or-exponential-time-integrator">Kelvin-Helmholtz instability using IMEX or exponential time integrator</a></li>
+        <li class="main active"><a href="#awards">Awards</a></li>
         
     
     </ul>
@@ -231,52 +225,49 @@
 --></div> <!-- toc on top on mobile -->
             <div class="col-md-9" role="main">
 
-<h1 id="scalable-hybridized-dg-and-exponential-dg-for-fluid-models">Scalable Hybridized DG and Exponential DG for Fluid Models</h1>
-<p>Highlight by Tan Bui-Thanh (UT Austin).</p>
-<h2 id="overview">Overview</h2>
-<p>Advanced Tokamak simulations need rigorous high-order accuracy, efficient temporal simulations at desperately different scales.</p>
-<ul>
-<li>We proposed and analyzed a high-order hybridized Discontinuous Galerkin (HDG) framework for MHD system to achieve stable and high-order accuracy in space</li>
-<li>We proposed and analyzed multigrid, multilevel approaches for HDG</li>
-<li>We proposed and analyzed high-order IMEX and exponential time integrators  to over time-step limitation due to fast physics</li>
-</ul>
-<hr />
-<h2 id="scalable-high-order-hdg-based-mhd-solver">Scalable, high-order HDG-based MHD solver</h2>
-<p><a href="../img/gallery/2d-ic.mp4"><img alt="" src="../img/gallery/2d-ic.png" /></a></p>
-<div align="center">*2D island coalescence using a very high-order HDG scheme. The current sheet breaks into plasmoids.*</div>
+<h2 id="awards">Awards</h2>
+<div class="row award">
+    <div class="col-sm-3">
+        <img class="awardPhoto" src="../img/awards/L_Chacon.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-sm-9">
+        <h4 style="margin-bottom: 0"> Luis Chacon receives Enrest Orlando Lawrence Award (DOE)</h4>
+        <p style="font-size: smaller">Jun 21, 2022</p>
+        <p>
+        The U.S. Department of Energy awarded Luis Chacon (LANL) with Enrest Orlando Lawrence Award for "seminal contributions in multiscale algorithms for fluid, kinetic, and hybrid simulation of plasmas, enabling scientific breakthroughs in fast magnetic reconnection and self-organization in magnetic fusion systems, and in reactivity degradation in inertial fusion systems".        
+        </p>
+    </div>
+</div>
 
-<p><a href="../img/gallery/3d-ic.mp4"><img alt="" src="../img/gallery/3d-ic.png" /></a></p>
-<div align="center">*3D island coalescence using a very high-order HDG scheme. A current sheet is forming in the center of the domain.*</div>
+<div class="row award">
+    <div class="col-sm-3">
+        <img class="awardPhoto" src="../img/awards/J_Shadid2.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-sm-9">
+        <h4 style="margin-bottom: 0"> John N. Shadid was awarded Thomas J.R. Hughes Medal for Computational Fluid Dynamics (USACM)</h4>
+        <p style="font-size: smaller">Jun 28, 2019</p>
+        <p>
+        The U.S. Assoc. of Computational Mechanics awarded John N. Shadid (SNL) with Thomas J.R. Hughes Medal for Computational Fluid Dynamics for "outstanding and sustained contributions to large-scale parallel multiphysics computational fluid-dynamics solution methods, high-performance computing algorithms/software, and numerical methods for coupled nonlinear partial differential equations.”    
+        </p>
+    </div>
+</div>
 
-<p><a href="../img/gallery/kh-mhd.mp4"><img alt="" src="../img/gallery/kh-mhd.png" /></a></p>
-<div align="center">*3D Kelvin-Helmholtz instability of MHD*</div>
-
-<hr />
-<h2 id="kelvin-helmholtz-instability-using-imex-or-exponential-time-integrator">Kelvin-Helmholtz instability using IMEX or exponential time integrator</h2>
-<p>Several Kelvin-Helmholtz instabilities for different models are studied. 
-Two types of time integrators are considered: exponential integrator and IMEX integrators.
-We are currently extending the proposed schemes to MHD.</p>
-<p><img alt="" src="../img/gallery/hp-HDG.png" /></p>
-<div align="center">*hp-adaptive HDG solver*</div>
-
-<p><a href="../img/gallery/epi2-Cr5-1em7.mp4"><img alt="" src="../img/gallery/kh-euler.png" /></a></p>
-<div align="center">*3D Kelvin-Helmholtz instability for Euler equations. An exponential time integrator is used along with a high-order DG scheme.*</div>
-
-<p><a href="../img/gallery/KelvinHelmholtzInstabilityForShallowWaterOnTheEarth.mp4"><img alt="" src="../img/gallery/hdg-dg-kh.png" /></a></p>
-<div align="center">*3D Kelvin-Helmholtz instability for shallow water equations on a sphere. A IMEX integrator is used along with a high-order HDG-DG scheme.*</div>
-
-<script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script></div>
+<div class="row award">
+    <div class="col-sm-3">
+        <img class="awardPhoto" src="../img/awards/J_Shadid.jpg" alt="Missing picture" width="100%">
+    </div>
+    <div class="col-sm-9">
+        <h4 style="margin-bottom: 0">  John N. Shadid was elected fellow of Society of Industrial and Applied Math. (SIAM) </h4>
+        <p style="font-size: smaller">Jun 9, 2018</p>
+        <p>
+        The Society of Industrial and Applied Math elected John N. Shadid(SNL) as fellow for "solution methods for multiphysics systems, scalable parallel numerical algorithms, and numerical methods for strongly coupled nonlinear PDEs”.  
+        </p>
+    </div>
+</div></div>
             <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#scalable-hybridized-dg-and-exponential-dg-for-fluid-models">Scalable Hybridized DG and Exponential DG for Fluid Models</a></li>
-        
-            <li><a href="#overview">Overview</a></li>
-        
-            <li><a href="#scalable-high-order-hdg-based-mhd-solver">Scalable, high-order HDG-based MHD solver</a></li>
-        
-            <li><a href="#kelvin-helmholtz-instability-using-imex-or-exponential-time-integrator">Kelvin-Helmholtz instability using IMEX or exponential time integrator</a></li>
+        <li class="main active"><a href="#awards">Awards</a></li>
         
     
     </ul>
