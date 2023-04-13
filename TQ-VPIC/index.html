@@ -72,7 +72,7 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -101,8 +101,8 @@
                         
                     
                         
-                            <li >
-                                 <a href="../TQ-VPIC/">Parallel transport physics of plasma thermal quench</a>
+                            <li class="active">
+                                 <a href="./">Parallel transport physics of plasma thermal quench</a>
                             </li>
                         
                     
@@ -193,9 +193,9 @@
             
             
             
-                <li class="active">
+                <li >
                     <!-- Replace "nav_item.url|url" with "nav_item.url" for older mkdocs (before 1.0) -->
-                    <a href="./">Gallery</a>
+                    <a href="../gallery/">Gallery</a>
                 </li>
             
             
@@ -216,96 +216,81 @@
 
         <div class="container">
             
-            <div class="col-md-12" role="main">
-
-<h1 id="gallery">Gallery</h1>
-<p>This page collects results from various simulations from the TDS team. Most pictures are linked to simulation movies.</p>
-<p><br>
-<center></p>
-<div class="col-md-4">
-<p><a href="../img/gallery/144981_pt1_t200-930.mp4"><img alt="" src="../img/gallery/bout.png" /></a>
-<em>Pressure perturbation increases ~5x and spreads from near separatrix to the entire domain. (left) the total pressure; (right) normalized pressure.</em></p>
-<hr />
-<p><a href="../img/gallery/Qpar_odt.mp4"><img alt="" src="../img/gallery/Qpar_odt.png" /></a>
-<em>TQ simulations with and w/o mitigation (MGI). MGI stands for Massive Gas Injection. Simulations suggest that MGI could reduce the peak heat load on divertor target and spreads it over a wider wetting area.</em></p>
-<hr />
-<p><a href="../img/gallery/Meff.mp4"><img alt="" src="../img/gallery/Meff.png" /></a>
-<em>The 3D structure of the effective magnetic mirror ratio $M_{eff}$ in the presence of open stochastic magnetic fields. The black line shows an example open magnetic field line. Red and blue colors represent regions of magnetic wells ($M_{eff} &gt; 1$) and magnetic hills ($M_{eff} &lt; 1$), respectively. Charged particles can be trapped in the magnetic well region by the magnetic mirror force.</em></p>
-<hr />
-<p><a href="../img/gallery/Density_Potential.mp4"><img alt="" src="../img/gallery/Density_Potential.png" /></a>
-<em>The temporal evolution of (left) electron density and (right) electrostatic potential in the presence of open stochastic magnetic fields during the thermal quench. Upper figures show the case where the $\mathbf{E}\times\mathbf{B}$ drift motion is ignored, whereas lower figures show the case where the ExB drift motion is included.</em></p>
-<hr />
-<p><img alt="" src="../img/gallery/drekar/Elman_Sparse_Grid.png" />
-<em>Replace "direct solution" of algebraic system with surrogate approximation using sparse grid collocation (interpolation) in
-a free-boundary Grad-Shafranov solver.</em></p>
-<hr />
-<p><img alt="" src="../img/gallery/rmp.png" />
-<em>The Poincare plot can be generated using HenonNets 10x faster than conventional methods while achieving comparable accuracy.</em></p>
-<hr />
-<p><a href="../img/gallery/2d-ic.mp4"><img alt="" src="../img/gallery/2d-ic.png" /></a>
-<em>2D island coalescence using a very high-order HDG scheme. The current sheet breaks into plasmoids.</em></p>
-<hr />
-<p><a href="../img/gallery/3d-ic.mp4"><img alt="" src="../img/gallery/3d-ic.png" /></a>
-<em>3D island coalescence using a very high-order HDG scheme. A current sheet is forming in the center of the domain.</em></p>
-<hr />
-<p><img alt="" src="../img/gallery/hp-HDG.png" />
-<em>hp-adaptive HDG solver</em></p>
+            <div class="col-md-3 visible-xs visible-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#parallel-transport-physics-of-plasma-thermal-quench">Parallel transport physics of plasma thermal quench</a></li>
+        
+            <li><a href="#overview">Overview</a></li>
+        
+            <li><a href="#result">Result</a></li>
+        
+    
+    </ul>
 </div>
-<div class="col-md-5">
-<p><a href="../img/gallery/E_1.69chiu.mp4"><img alt="" src="../img/gallery/rfp_plot.png" /></a></p>
-<p><em>PETSc-p4est-based relativistic Fokker-Planck solver can capture features in distribution functions dynamically.</em></p>
+
+<!-- Developer notes:
+  See the MkDocs documentation in https://www.mkdocs.org/dev-guide/themes/#page
+  and the Jinja2 template API in https://tedboy.github.io/jinja2/index.html
+--></div> <!-- toc on top on mobile -->
+            <div class="col-md-9" role="main">
+
+<h1 id="parallel-transport-physics-of-plasma-thermal-quench">Parallel transport physics of plasma thermal quench</h1>
+<p>Highlight by Yanzeng Zhang, Jun Li and Xianzhu Tang Los Alamos National Laboratory (LANL)</p>
+<p><strong>LA-UR-23-23652. Approved for public release; distribution is unlimited.</strong></p>
+<h2 id="overview">Overview</h2>
+<p>We use fully kinetic VPIC simulations and analytical theory to elucidate three underlying parallel transport physics that govern the thermal collapse of a fusion-grade and hence nearly collisionless plasma:</p>
+<ol>
+<li>
+<p>Thermal collapse of surrounding plasmas due to a localized radiative cooling mass (RCM) is dominated by convective energy transport as opposed to conductive energy transport, and as the result, thermal quench comes in the form of four propagating fronts with distinct
+characteristic speeds, all originated from the RCM</p>
+</li>
+<li>
+<p>The overall thermal quench inevitably has a transition from the collisionless phase to the collisional phase. The collisional cooling has its own power scaling with a smaller power -0.4 compared to the collisionless case with a power -2. The transition from collisionless to collisional cooling has its own physics and scaling.</p>
+</li>
+<li>
+<p>The cooling of perpendicular electron temperature closely follows that of parallel
+electron temperature, and in a nearly collisionless plasma, is mostly driven by fast electromagnetic (EM) kinetic instabilities.</p>
+</li>
+</ol>
+<h2 id="result">Result</h2>
+<p><img alt="" src="../img/gallery/Te-Ti-phi-ab-reflux-diagram.png" /></p>
+<p><em>Normalized parallel electron and ion temperature, and
+  electrostatic potential from first-principle VPIC simulations. Different right-going fronts are labeled, where a uniform plasma with constant temperature and density is initially fills the whole domain. The cooling spot is implemented as a thermobath (for a radiative cooling spot) at the left boundary, which conserves particles by re-injecting electron-ion pairs (equal to the ions across the boundary) with a much smaller clamped temperature. The right boundary is signified as infinity. 
+  Paper: <a href="https://iopscience.iop.org/article/10.1209/0295-5075/acbb20/meta">Cooling flow regime of a plasma thermal quench</a></em></p>
 <hr />
-<p><a href="../img/gallery/res1e-6.mp4"><img alt="" src="../img/gallery/mfem1.png" /></a></p>
-<p><em>MFEM-based MHD solver resolves multi-scale features involving a thin current sheet and plasmoid instability.</em></p>
-<hr />
-<p><img alt="" src="../img/gallery/drekar/3D_ITER_Plasma_Region_Mesh.png" />
-<em>Unstructured FE hex mesh of ITER plasma domain and solid wall using Cubit. Cubit provides both all hexahedron and tetrahedron capabilities. Capabilities for automatic uniform refinement and parallel portioning are available. As well soon a uniform refinement that snaps the element edges to the geometry will also be available.</em></p>
+<p><img alt="" src="../img/gallery/Te-center-t-log-long.png" /></p>
+<p><em>Schematic view of core parallel electron temperature evolution in log-log scale from VPIC simulations. Preprint: <a href="https://arxiv.org/abs/2211.06781">Staged cooling of a fusion-grade plasma in a tokamak thermal quench</a></em></p>
 <hr />
 <video controls preload="metadata" width="100%">
-    <source src="../img/gallery/drekar/VDE_movie.mp4" type="video/mp4">
+    <source src="../img/gallery/velocity.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
-*An initial VDE simulation on 3D ITER geometry usign a VMS compressible resistive MHD formulation in Drekar.*
 
+<p><em>Plasma parallel velocity. The transition from decompressional cooling to compressional heating is shown when the cooling front (peak of velocity) hits the center. The compressional heating occurs at the transition from collisionless to collisional regime, the latter of which begins when the Landau damping kills the ion sound waves and hence the convection so that the Braginskii conduction dominates.</em></p>
 <hr />
-<p><img alt="" src="/img/gallery/drekar/Neutral_Expansion_in_core.png" />
-<em>Schematic diagram of an idealized insertion of a neutral cloud in the core region for disruption mitigation. Inside the separatrix a
-high density neutral cloud of Ar ionizes as it expands into a hot (10keV) Deuterium plasma environment.</em></p>
-<hr />
-<p><a href="../img/gallery/Two_Stream.mp4"><img alt="" src="../img/gallery/Two_Stream.png" /></a>
-<em>Particle simulation of two-stream instability with three different weight schemes: (left) full-f, (middle) generalized delta-f, and (right) typical delta-f. Upper and lower figures show the motion of electron markers and the evolution of the total electron distribution function in the phase-space ($x-v$), respectively. Whereas the typical delta-f scheme (right) fails after a short time, the newly developed generalized delta-f scheme (middle) successfully simulates the same result as the full-f (left) does.</em></p>
-<hr />
-<p><a href="../img/gallery/kh-mhd.mp4"><img alt="" src="../img/gallery/kh-mhd.png" /></a>
-<em>3D Kelvin-Helmholtz instability of MHD</em></p>
-<hr />
-<p><img alt="" src="../img/gallery/cr_runaway_collage.png" />
-<em>Collisional-radiative modeling related to runaway electrons</em></p>
-</div>
-<div class="col-md-3">
-<hr />
-<p><a href="../img/gallery/bpnch-hall-mhd-unif-rho-chi_par_1e3.mp4"><img alt="" src="../img/gallery/bpnch-hall-mhd.png" /></a>
-<em>A full reconnection event induced by a (1,1) kink instability of a Bennet pinch equilibrium in helical geometry with $\chi_\parallel/\chi_\perp \sim 10^{7}$.</em></p>
-<hr />
-<p><a href="../img/pixie3d/11-visc-poinc.mp4"><img alt="" src="../img/pixie3d/11-poinc.png" /></a>
-<em>Magnetic topology in excerpt of (1,1) kink simulation without thermal diffusion. As the (1,1) mode grows the core splits and gets expelled while magnetic stochasticity has set in at the outer edge. Towards the end, isolated islands reform but nothing remains from the original core.</em></p>
-<hr />
-<p><a href="../img/pixie3d/chipar-poinc.mp4"><img alt="" src="../img/pixie3d/A1.png" /></a>
-<em>Magnetic topology in excerpt of (1,1) kink simulation with thermal diffusion. The mode grows and splits the core. Magnetic stochasticity sets in outside the core.<br> The core eventually reheals forming a transport barrier.</em></p>
-<hr />
-<p><a href="../img/pixie3d/db-poinc.mp4"><img alt="" src="../img/pixie3d/B1.png" /></a>
-<em>Magnetic topology in excerpt of the double tearing simulation. Lots of different islands form due to multiple double tearing surfaces of higher order. The edge develops stochasticity while the core and some isolated islands survive.</em></p>
-<hr />
-<p><a href="../img/gallery/epi2-Cr5-1em7.mp4"><img alt="" src="../img/gallery/kh-euler.png" /></a>
-<em>3D Kelvin-Helmholtz instability for Euler equations. An exponential time integrator is used along with a high-order DG scheme.</em></p>
-<hr />
-<p><a href="../img/gallery/KelvinHelmholtzInstabilityForShallowWaterOnTheEarth.mp4"><img alt="" src="../img/gallery/hdg-dg-kh.png" /></a>
-<em>3D Kelvin-Helmholtz instability for shallow water equations on a sphere. A IMEX integrator is used along with a high-order HDG-DG scheme.</em></p>
-</div>
-<p></center></p>
+<p><img alt="" src="../img/gallery/Te-para-perp-ES-EM-absorb.png" /></p>
+<p><em>The time evolutions of core electron temperature from both electromagnetic (with EM instabilities) and electrostatic (without EM instabilities) simulations with absorbing boundaries for an illustration.</em></p>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script></div>
+            <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#parallel-transport-physics-of-plasma-thermal-quench">Parallel transport physics of plasma thermal quench</a></li>
+        
+            <li><a href="#overview">Overview</a></li>
+        
+            <li><a href="#result">Result</a></li>
+        
+    
+    </ul>
+</div>
 
+<!-- Developer notes:
+  See the MkDocs documentation in https://www.mkdocs.org/dev-guide/themes/#page
+  and the Jinja2 template API in https://tedboy.github.io/jinja2/index.html
+--></div>
             
         </div>
 
