@@ -1,4 +1,4 @@
-# TDS Plasma Sheath Simulations
+# Plasma Sheath Simulations
 Highlight by Yuzhi Li (Virginia Tech), Bhuvana Srinivasan (Virginia Tech), Yanzeng Zhang (LANL) and Xian-Zhu Tang (LANL)
 
 ## Bohm Criterion of Plasma Sheaths away from Asymptotic Limits

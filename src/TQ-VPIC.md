@@ -1,5 +1,5 @@
-# TDS: Parallel transport physics of plasma thermal quench
-Highlight by Yanzeng Zhang, Jun Li and Xianzhu Tang Los Alamos National Laboratory (LLNL)
+# Parallel transport physics of plasma thermal quench
+Highlight by Yanzeng Zhang, Jun Li and Xianzhu Tang Los Alamos National Laboratory (LANL)
 
 **LA-UR-23-23652. Approved for public release; distribution is unlimited.**
 
@@ -28,7 +28,7 @@ electron temperature, and in a nearly collisionless plasma, is mostly driven by 
 
 ![](img/gallery/Te-center-t-log-long.png)
 
-*Schematic view of core parallel electron temperature evolution in log-log scale from VPIC simulations.Preprint: [Staged cooling of a fusion-grade plasma in a tokamak thermal quench](https://arxiv.org/abs/2211.06781)*
+*Schematic view of core parallel electron temperature evolution in log-log scale from VPIC simulations. Preprint: [Staged cooling of a fusion-grade plasma in a tokamak thermal quench](https://arxiv.org/abs/2211.06781)*
 
 ----
 
@@ -36,13 +36,13 @@ electron temperature, and in a nearly collisionless plasma, is mostly driven by 
     <source src="../img/gallery/velocity.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
-*Plasma parallel velocity. The transition from decompressional cooling to compressional heating is shown when the cooling front (peak of velocity) hits the center. The compressional heating occurs at the transition from collisionless to collisional regime, the latter of which begins when the Landau damping kills the ion sound waves and hence the convection so that the Braginskii conduction dominates. *
+*Plasma parallel velocity. The transition from decompressional cooling to compressional heating is shown when the cooling front (peak of velocity) hits the center. The compressional heating occurs at the transition from collisionless to collisional regime, the latter of which begins when the Landau damping kills the ion sound waves and hence the convection so that the Braginskii conduction dominates.*
 
 ----
 
 ![](img/gallery/Te-para-perp-ES-EM-absorb.png)
 
-*The time evolutions of core electron temperature from both electromagnetic (with EM instabilities) and electrostatic (without EM instabilities) simulations with absorbing boundaries for an illustration. *
+*The time evolutions of core electron temperature from both electromagnetic (with EM instabilities) and electrostatic (without EM instabilities) simulations with absorbing boundaries for an illustration.*
 
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script>

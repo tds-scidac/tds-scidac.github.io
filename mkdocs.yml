@@ -20,6 +20,7 @@ nav:
   - 'Nonlinear MHD leading into disruption': pixie3d.md
   - 'Thermal quench of core plasmas': gts.md
   - 'Thermal quench of edge/boundary plasmas': bout.md
+  - 'Parallel transport physics of plasma thermal quench': TQ-VPIC.md
   - 'Collisional-radiative modeling of disrupting plasma': cr.md
   - 'Kinetic modeling of plasma-wall and plasma-neutral interaction': sheath.md 
   - 'Multifluid modeling of plasma/neutral interaction and VDE': drekar.md
