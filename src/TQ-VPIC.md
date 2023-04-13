@@ -19,6 +19,7 @@ electron temperature, and in a nearly collisionless plasma, is mostly driven by 
 ## Result
 
 ![](img/gallery/Te-Ti-phi-ab-reflux-diagram.png)
+
 *Normalized parallel electron and ion temperature, and
   electrostatic potential from first-principle VPIC simulations. Different right-going fronts are labeled, where a uniform plasma with constant temperature and density is initially fills the whole domain. The cooling spot is implemented as a thermobath (for a radiative cooling spot) at the left boundary, which conserves particles by re-injecting electron-ion pairs (equal to the ions across the boundary) with a much smaller clamped temperature. The right boundary is signified as infinity. 
   Paper: [Cooling flow regime of a plasma thermal quench](https://iopscience.iop.org/article/10.1209/0295-5075/acbb20/meta)*
@@ -26,6 +27,7 @@ electron temperature, and in a nearly collisionless plasma, is mostly driven by 
 ----
 
 ![](img/gallery/Te-center-t-log-long.png)
+
 *Schematic view of core parallel electron temperature evolution in log-log scale from VPIC simulations.Preprint: [Staged cooling of a fusion-grade plasma in a tokamak thermal quench](https://arxiv.org/abs/2211.06781)*
 
 ----
