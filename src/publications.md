@@ -7,6 +7,9 @@
 1. J.-U. Chen, S. Kang, T. Bui-Thanh, and J. N. Shadid, UNIFIED HP-HDG FRAMEWORKS FOR FRIEDRICHS' PDE SYSTEMS, *Computers & Mathematics with Application*, *submitted*, **2023**.
 1. Z. Jorti, Q. Tang, K. Lipnikov and X.-Z. Tang [A mimetic finite difference based quasi-static magnetohydrodynamic solver for force-free plasmas in tokamak disruptions](https://arxiv.org/abs/2303.08337), *submitted*, **2023**.
 1. J. Rudi, M. Heldman, E. M. Constantinescua, Q. Tang and X.-Z. Tang [Scalable Implicit Solvers with Dynamic Mesh Adaptation for a Relativistic Drift-Kinetic Fokker-Planck-Boltzmann Model](https://arxiv.org/abs/2303.17019), *submitted*, **2023**.
+1. Y. Zhang, J. Li and X.-Z. Tang [Cooling flow regime of plasma thermal quench](https://iopscience.iop.org/article/10.1209/0295-5075/acbb20), *Europhysics letters* 141 54002, 2023.
+1. Y. Zhang and X.-Z. Tang [On the collisional damping of plasma velocity space instabilities](https://doi.org/10.1063/5.0136739), *Physics of Plasmas* 30 030701, 2023.
+1. Y. Zhang, Y. Li, B. Srinivasan, and X.-Z. Tang [Resolving the mystery of electron perpendicular temperature spike in the plasma sheath](https://doi.org/10.1063/5.0132612), *Physics of Plasmas* 30 033504, 2023.
 
 ## 2022
 1. A. H. Boozer. [The rapid destruction of toroidal magnetic surfaces](https://doi.org/10.1063/5.0076363), *Phys. Plasmas*, 29:022301, **2022**
