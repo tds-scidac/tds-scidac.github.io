@@ -6,6 +6,11 @@ This page collects results from various simulations from the TDS team. Most pict
 <center>
 
 <div class="col-md-4"  markdown="1">
+    
+[![](img/pixie3d/t=9971.352.png)](img/pixie3d/poincare300xlowquality.mp4)
+*Poincare plot of the magnetic topology in a Pixie3D simulation over 20,000 Alfven times. The goal of this study is to determine if increasing the density of plasma fuel would result in a more controlled thermal quench. This result visualizes that despite the loss of equilibrium and the onset of stochastity, the central core of the reactor, where the majority of the fuel resides, remains nested.*
+    
+----
 
 [![](img/gallery/bout.png)](img/gallery/144981_pt1_t200-930.mp4)
 *Pressure perturbation increases ~5x and spreads from near separatrix to the entire domain. (left) the total pressure; (right) normalized pressure.*
@@ -42,15 +47,7 @@ a free-boundary Grad-Shafranov solver.*
 [![](img/gallery/2d-ic.png)](img/gallery/2d-ic.mp4)
 *2D island coalescence using a very high-order HDG scheme. The current sheet breaks into plasmoids.*
 
-----
 
-[![](img/gallery/3d-ic.png)](img/gallery/3d-ic.mp4)
-*3D island coalescence using a very high-order HDG scheme. A current sheet is forming in the center of the domain.*
-
-----
-
-![](img/gallery/hp-HDG.png)
-*hp-adaptive HDG solver*
 
 </div><div class="col-md-5"  markdown="1">
 
@@ -98,6 +95,12 @@ high density neutral cloud of Ar ionizes as it expands into a hot (10keV) Deuter
 ![](img/gallery/cr_runaway_collage.png)
 *Collisional-radiative modeling related to runaway electrons*
 
+----
+
+[![](img/gallery/3d-ic.png)](img/gallery/3d-ic.mp4)
+*3D island coalescence using a very high-order HDG scheme. A current sheet is forming in the center of the domain.*
+
+
 </div><div class="col-md-3" markdown="1">
 
 ----
@@ -130,7 +133,10 @@ high density neutral cloud of Ar ionizes as it expands into a hot (10keV) Deuter
 [![](img/gallery/hdg-dg-kh.png)](img/gallery/KelvinHelmholtzInstabilityForShallowWaterOnTheEarth.mp4)
 *3D Kelvin-Helmholtz instability for shallow water equations on a sphere. A IMEX integrator is used along with a high-order HDG-DG scheme.*
 
+----
 
+![](img/gallery/hp-HDG.png)
+*hp-adaptive HDG solver*
 
 </div>
 
