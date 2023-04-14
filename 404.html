@@ -7,16 +7,21 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
+        <link rel="shortcut icon" href="img/favicon.ico">
         <title>TDS</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -30,111 +35,119 @@
     </head>
 
     <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
-                <a class="navbar-brand" href="/.">TDS</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">TDS</a>
+                </div>
 
                 <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="/." class="nav-link">Home</a>
+                            <li >
+                                <a href=".">Home</a>
                             </li>
-                            <li class="navitem">
-                                <a href="/news/" class="nav-link">News</a>
+                            <li >
+                                <a href="news/">News</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="/cont-fmr/" class="dropdown-item">Control & flux surface destruction</a>
+<li >
+    <a href="cont-fmr/">Control & flux surface destruction</a>
 </li>
                                     
-<li>
-    <a href="/pixie3d/" class="dropdown-item">Nonlinear MHD leading into disruption</a>
+<li >
+    <a href="pixie3d/">Nonlinear MHD leading into disruption</a>
 </li>
                                     
-<li>
-    <a href="/gts/" class="dropdown-item">Thermal quench of core plasmas</a>
+<li >
+    <a href="gts/">Thermal quench of core plasmas</a>
 </li>
                                     
-<li>
-    <a href="/bout/" class="dropdown-item">Thermal quench of edge/boundary plasmas</a>
+<li >
+    <a href="bout/">Thermal quench of edge/boundary plasmas</a>
 </li>
                                     
-<li>
-    <a href="/TQ-VPIC/" class="dropdown-item">Parallel transport physics of plasma thermal quench</a>
+<li >
+    <a href="TQ-VPIC/">Parallel transport physics of plasma thermal quench</a>
 </li>
                                     
-<li>
-    <a href="/cr/" class="dropdown-item">Collisional-radiative modeling of disrupting plasma</a>
+<li >
+    <a href="cr/">Collisional-radiative modeling of disrupting plasma</a>
 </li>
                                     
-<li>
-    <a href="/sheath/" class="dropdown-item">Kinetic modeling of plasma-wall and plasma-neutral interaction</a>
+<li >
+    <a href="sheath/">Kinetic modeling of plasma-wall and plasma-neutral interaction</a>
 </li>
                                     
-<li>
-    <a href="/drekar/" class="dropdown-item">Multifluid modeling of plasma/neutral interaction and VDE</a>
+<li >
+    <a href="drekar/">Multifluid modeling of plasma/neutral interaction and VDE</a>
 </li>
                                     
-<li>
-    <a href="/RAMc/" class="dropdown-item">Integrated runaway modeling for current quench</a>
+<li >
+    <a href="RAMc/">Integrated runaway modeling for current quench</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Computing <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Computing <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li>
-    <a href="/anisotropic/" class="dropdown-item">Algorithmic innovation for anisotropic transport</a>
+<li >
+    <a href="anisotropic/">Algorithmic innovation for anisotropic transport</a>
 </li>
                                     
-<li>
-    <a href="/mfem/" class="dropdown-item">MFEM-based implicit MHD solver with AMR</a>
+<li >
+    <a href="mfem/">MFEM-based implicit MHD solver with AMR</a>
 </li>
                                     
-<li>
-    <a href="/fokkerplanck/" class="dropdown-item">PETSc-p4est relativistic Fokker-Planck-Boltzmann solver</a>
+<li >
+    <a href="fokkerplanck/">PETSc-p4est relativistic Fokker-Planck-Boltzmann solver</a>
 </li>
                                     
-<li>
-    <a href="/hdg/" class="dropdown-item">Scalable hybridized DG and exponential DG for fluid models</a>
+<li >
+    <a href="hdg/">Scalable hybridized DG and exponential DG for fluid models</a>
 </li>
                                     
-<li>
-    <a href="/uq/" class="dropdown-item">Uncertainty Quantification</a>
+<li >
+    <a href="uq/">Uncertainty Quantification</a>
 </li>
                                     
-<li>
-    <a href="/ml/" class="dropdown-item">Machine Learning</a>
+<li >
+    <a href="ml/">Machine Learning</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="navitem">
-                                <a href="/publications/" class="nav-link">Publications</a>
+                            <li >
+                                <a href="publications/">Publications</a>
                             </li>
-                            <li class="navitem">
-                                <a href="/gallery/" class="nav-link">Gallery</a>
+                            <li >
+                                <a href="gallery/">Gallery</a>
                             </li>
-                            <li class="navitem">
-                                <a href="/awards/" class="nav-link">Awards</a>
+                            <li >
+                                <a href="awards/">Awards</a>
                             </li>
-                            <li class="navitem">
-                                <a href="/about/" class="nav-link">About</a>
+                            <li >
+                                <a href="about/">About</a>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
@@ -144,7 +157,6 @@
         </div>
 
         <div class="container">
-            <div class="row">
 
     <div class="row-fluid">
       <div id="main-content" class="span12">
@@ -154,7 +166,6 @@
     </div>
 
 
-            </div>
         </div>
 
         <footer class="col-md-12">
@@ -162,38 +173,41 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+                <div id="mkdocs-search-results"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">

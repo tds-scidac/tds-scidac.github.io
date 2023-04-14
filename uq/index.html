@@ -39,7 +39,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="https://tds-scidac.github.io/">TDS</a>
+            <a class="navbar-brand" href="https://tds-scidac.github.io">TDS</a>
         </div>
 
         <script>var base_url = '..';</script>
@@ -251,11 +251,13 @@ the breaking of the thin current sheet. The algorithm uses these initial evaluat
 <div class="col-md-6">
     <img src="../img/gallery/drekar/Tearing_Mode.png" alt="" width="100%">
 </div>
+
 <div class="col-md-6">
     <img src="../img/gallery/drekar/MultilevelComputationCosts.png" alt="" width="100%">
 </div>
+
 <p><em>The result of the MLUQ algorithm/analysis is a development of a sequence of computations, on various mesh levels, that significantly reduces the total CPU time
-expenditure to achieve a desired level of estimated variance reduction.</em></p>
+expenditure to achieve a desired level of estimated variance reduction.</em>
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
@@ -270,7 +272,7 @@ expenditure to achieve a desired level of estimated variance reduction.</em></p>
     </div>
     <div class="col-md-2"></div>
 </div>
-<p><em>The table compares the number of simulations scheduled by the MLMC algorithm for each mesh resolution to achieve an estimated standard deviation in the computation of the mean QoI. Clearly, the MLMC algorithm has drastically reduced the number of highest fidelity computations, reducing the overall estimated cost ~30x times to obtain the desired statistical precision.</em></p>
+<em>The table compares the number of simulations scheduled by the MLMC algorithm for each mesh resolution to achieve an estimated standard deviation in the computation of the mean QoI. Clearly, the MLMC algorithm has drastically reduced the number of highest fidelity computations, reducing the overall estimated cost ~30x times to obtain the desired statistical precision.</em></p>
 <hr />
 <h3 id="multifidelity-methods-for-uncertainty-quantification-mfuq">Multifidelity methods for uncertainty quantification (MFUQ)</h3>
 <p>Multifidelity uncertainty quantification allows for efficient and accurate propagation of uncertainty in complex, costly multiphysics plasma models needed to study
@@ -286,6 +288,7 @@ a approximate control variate for multifidelity, and ACV-IS is an independent sa
     <img src="../img/gallery/drekar/expanding_plasma_IC.png" width="100%">
     <em>We consider a plasma of ions and electrons with three uncertain parameters -- the core number density, the initial ion temperature, and the ratio of initial electron to initial ion temperatures.</em>
 </div>
+
 <div class="col-md-6">
     <img src="../img/gallery/drekar/expanding_plasma_profs_sample3.png" width="100%">
     <em>Relevant solution profiles for the QoIs at the final simulation time for a representative sample of the uncertain IC.</em>
@@ -298,6 +301,7 @@ a approximate control variate for multifidelity, and ACV-IS is an independent sa
     </div>
     <div class="col-md-2"></div>
 </div>
+
 <p><em>Optimal mean estimators and 99.7% confidence intervals for the QoIs. All MF strategies show significant improvement over a single-fidelity estimator.</em></p>
 <hr />
 <h2 id="reduced-sampling-uq-and-sensitivities-for-grad-shafranov-equation">Reduced sampling UQ and sensitivities for Grad-Shafranov equation.</h2>
@@ -326,10 +330,12 @@ broadly applicable to more complex models.</p>
     </div>
     <div class="col-md-2"></div>
 </div>
+
 <p><em>Average CPU times for evaluation of surrogate function and direct solution of the free boundary problem, and cost reductions 
 obtained using surrogates.
 The details of the algorithmic approach and results can be found in <a href="https://doi.org/10.1016/j.jcp.2021.110699">Surrogate approximation of the Grad-Shafranov free boundary problem via stochastic collocation on sparse grids</a>.</em></p>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script></div>
             <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
