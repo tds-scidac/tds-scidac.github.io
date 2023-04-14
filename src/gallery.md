@@ -47,15 +47,7 @@ a free-boundary Grad-Shafranov solver.*
 [![](img/gallery/2d-ic.png)](img/gallery/2d-ic.mp4)
 *2D island coalescence using a very high-order HDG scheme. The current sheet breaks into plasmoids.*
 
-----
 
-[![](img/gallery/3d-ic.png)](img/gallery/3d-ic.mp4)
-*3D island coalescence using a very high-order HDG scheme. A current sheet is forming in the center of the domain.*
-
-----
-
-![](img/gallery/hp-HDG.png)
-*hp-adaptive HDG solver*
 
 </div><div class="col-md-5"  markdown="1">
 
@@ -103,6 +95,12 @@ high density neutral cloud of Ar ionizes as it expands into a hot (10keV) Deuter
 ![](img/gallery/cr_runaway_collage.png)
 *Collisional-radiative modeling related to runaway electrons*
 
+----
+
+[![](img/gallery/3d-ic.png)](img/gallery/3d-ic.mp4)
+*3D island coalescence using a very high-order HDG scheme. A current sheet is forming in the center of the domain.*
+
+
 </div><div class="col-md-3" markdown="1">
 
 ----
@@ -135,7 +133,10 @@ high density neutral cloud of Ar ionizes as it expands into a hot (10keV) Deuter
 [![](img/gallery/hdg-dg-kh.png)](img/gallery/KelvinHelmholtzInstabilityForShallowWaterOnTheEarth.mp4)
 *3D Kelvin-Helmholtz instability for shallow water equations on a sphere. A IMEX integrator is used along with a high-order HDG-DG scheme.*
 
+----
 
+![](img/gallery/hp-HDG.png)
+*hp-adaptive HDG solver*
 
 </div>
 

@@ -14,7 +14,6 @@ markdown_extensions:
 nav:
 - Home: index.md
 - News: news.md
-- Awards: awards.md
 - Physics:
   - 'Control & flux surface destruction': cont-fmr.md
   - 'Nonlinear MHD leading into disruption': pixie3d.md
@@ -34,6 +33,7 @@ nav:
   - 'Machine Learning': ml.md
 - Publications: publications.md
 - Gallery: gallery.md
+- Awards: awards.md
 - About: about.md
 
 theme:
