@@ -8,7 +8,7 @@ This page collects results from various simulations from the TDS team. Most pict
 <div class="col-md-4"  markdown="1">
     
 [![](img/pixie3d/t=9971.352.png)](img/pixie3d/poincare300xlowquality.mp4)
-*Poincare plot of the magnetic topology in a Pixie3D simulation over 20,000 Alfven times. The goal of this study is to determine if increasing the density of plasma fuel would result in a more controlled thermal quench. This result visualizes that despite the loss of equilibrium and the onset of stochastity, the central core of the reactor, where the majority of the fuek resides, remains nested.*
+*Poincare plot of the magnetic topology in a Pixie3D simulation over 20,000 Alfven times. The goal of this study is to determine if increasing the density of plasma fuel would result in a more controlled thermal quench. This result visualizes that despite the loss of equilibrium and the onset of stochastity, the central core of the reactor, where the majority of the fuel resides, remains nested.*
     
 ----
 
