@@ -30,7 +30,7 @@ def define_env(env):
             if 'volume' in entry['entry'].fields.keys():
                 volume_and_pages = join [field('volume'), optional [':', pages]]
             else:
-                volume_and_pages = words ['pages', optional [pages]]
+                volume_and_pages = words [ optional [pages]]
             if 'url' in entry['entry'].fields.keys():
                 url = field('url', raw=True)
                 title = href[url, field('title')]
