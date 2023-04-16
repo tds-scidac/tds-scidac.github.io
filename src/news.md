@@ -2,7 +2,7 @@
 
 &nbsp;       | |
 ------------ | -----------------------------------------------------------------
-Apr 11, 2023 | TDS team members attend [Sherwood Fusion Theory Conference](https://www.sherwoodtheory.org/sw2023/index.php). Haotian Mao (UCSD & LANL) will give a invited talk. Xueqiao Xu (LLNL) is on the Program Committee.
+Apr 11, 2023 | TDS team members attend [Sherwood Fusion Theory Conference](https://www.sherwoodtheory.org/sw2023/index.php). Haotian Mao (UCSD & LANL) will give an invited talk. Xueqiao Xu (LLNL) is on the Program Committee.
 Mar 01, 2023 | The paper [On the collisional damping of plasma velocity space instabilities](https://doi.org/10.1063/5.0136739) by Yanzeng Zhang and Xianzhu Tang was published in Physics of Plasmas and selected as Editor's pick. 
 Oct 24, 2022 | Yanzeng Zhang is converted to Staff Scientist from Director's Postdoctoral Fellow in the Applied Mathematics and Plasma Physics group in the Theoretical Division at the Los Alamos National Laboratory. He will continue to work with TDS on the plasma thermal quench, runaway electrons, pellet physics, and power exhaust.
 Jun 22, 2022 | Congratulations to Mr. Yuzhi Li (VT), Dr. Nami Li (LLNL), and Prof. Chris McDevitt (Florida), for being selected to give invited talks at 2022 APS/DPP meeting, on the topics of Bohm criterion in plasma sheath, tokamak thermal quench, impact of small edge localized mode dynamics, and runaway electron dynamics in tokamak current quench, respectively
