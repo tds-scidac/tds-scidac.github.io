@@ -33,20 +33,6 @@ are used. These PB/ABF methods reduce the implicit solve for the complex coupled
 a set of sub-systems that segregate the physics (in the preconditioner only) for which we have demonstrated
 the use of scalable algebraic multilevel solvers. General details of these approaches can be found in [VMS Incompressible MHD](https://doi.org/10.1016/j.cma.2016.01.019), [Fully-coupled AMG Resistive MHD](https://doi.org/10.1016/j.cam.2017.09.028), [ABF 2D Reduced MHD](https://doi.org/10.1137/12088879X), [Teko PB/ABF Preconditioning Package](https://doi.org/10.1137/15M1017946).
 
-As an initial demonstration of the effectiveness of the PB/ABF approach
-to deal withe the off-diagonal coupling of the Alfven wave we show the solution statistics for increasing Alfven wave CFLs
-for a preliminary ITER VDE computational after a thermal quench.
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <img src="../img/gallery/drekar/VMS_ResistiveMHD_Alfven_Wave_CFL_Scaling_ABF.png" alt="" width="100%">
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-*The table presents the number of time steps (nT), the average number of nonlinear Newton steps per time step (nL/nT),
-the average number of linear iterations per non-linear step (l,nL) and the average time per time step (t/nT) excluding IO.
-These preliminary results indicates that the proposed PB/ABF method has excellent algorithmic and time per time step scaling
-for increasing Alfven wave CFLs.*
 
 ### Strong scaling of fully implicit VMS resistive MHD formulation 
 
