@@ -63,7 +63,7 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Physics <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -110,8 +110,14 @@
                         
                     
                         
-                            <li class="active">
-                                 <a href="./">Multifluid modeling of plasma/neutral interaction and VDE</a>
+                            <li >
+                                 <a href="../drekar-new/">Multifluid modeling of plasma/neutral interaction</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../drekar-mhd/">Resistive MHD modeling of plasma instabilities and VDE</a>
                             </li>
                         
                     
@@ -141,6 +147,12 @@
                         
                             <li >
                                  <a href="../mfem/">MFEM-based implicit MHD solver with AMR</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../drekar-cmp/">Parallel scaling of fluid plasma simulations in Drekar</a>
                             </li>
                         
                     
@@ -244,7 +256,7 @@
             <div class="col-md-9" role="main">
 
 <h1 id="development-of-efficient-imex-unstructured-fe-multiphysics-plasma-simulation-capabilities">Development of Efficient IMEX Unstructured FE Multiphysics Plasma Simulation Capabilities</h1>
-<p>Sandia National Laboratories + collaborators (LANL, FASTMATH, UMD, others)</p>
+<p>Sandia National Laboratories + collaborators (LANL, FASTMATH, others)</p>
 <p><strong>SAND2022-3490 W. Approved for public release; distribution is unlimited.</strong> </p>
 <h2 id="overview">Overview</h2>
 <p>Disruption modeling for characterization, prediction, and mitigation is essential for realizing tokamak
@@ -258,10 +270,6 @@ for </p>
 </li>
 <li>
 <p>Iterative solvers, and optimal physics-based multigrid preconditioners for efficient solution of multiple-time-scale plasma physics systems,</p>
-</li>
-<li>
-<p>Uncertainty quantification for high-dimensional spaces using reduced sampling (multilevel
-Monte Carlo) and multifidelity approaches.</p>
 </li>
 </ol>
 <hr />
@@ -309,16 +317,55 @@ the use of scalable algebraic multilevel solvers. General details of these appro
 to deal withe the off-diagonal coupling of the Alfven wave we show the solution statistics for increasing Alfven wave CFLs
 for a preliminary ITER VDE computational after a thermal quench.</p>
 <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
         <img src="../img/gallery/drekar/VMS_ResistiveMHD_Alfven_Wave_CFL_Scaling_ABF.png" alt="" width="100%">
     </div>
-    <div class="col-md-3"></div>
+    <div class="col-sm-3"></div>
 </div>
 <p><em>The table presents the number of time steps (nT), the average number of nonlinear Newton steps per time step (nL/nT),
 the average number of linear iterations per non-linear step (l,nL) and the average time per time step (t/nT) excluding IO.
 These preliminary results indicates that the proposed PB/ABF method has excellent algorithmic and time per time step scaling
 for increasing Alfven wave CFLs.</em></p>
+<h3 id="strong-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Strong scaling of fully implicit VMS resistive MHD formulation</h3>
+<p>We now consider a heterogeneous geometry consisting of the plasma region ITER geometry as well as the surrounding solid wall. These figures demonstrate the strong scaling of the implementation for two Lundquist numbers $10^4$, $10^7$.
+The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) and run to 100 global Alfven times with a constant time-step size dt = 2. This results in a max Alfven wave $CFL_A=750$ and max flow $CFL_u ={3}/{2}$. The number of cores is increased from 72 cores to 4680 cores, a 16x increase. The tests start with around 4800 elements per core with 72 cores, and end with around 300 elements per core with 1152 cores. The strong scaling begins to to become less efficient after approx. 300 elements per core done on 1152 cores. This is to be expected with so little work per core and with increasing cost for communication. The total time to solution, the speedup, efficiency and the iteration count for the solver are all presented. This scaling is excellent for a fully-implicit resistive MHD formulation with 300 elements per processor at the 1152 core case. The linear solver iteration results also demonstrate that the V-cycle coarse grid projection operators and coarse smoothers, and coarse grid solver are working as required as the processor count / sub-domains are increasing. It should be noted that a slightly more expensive smoother was used for the $S=10^7$ case.</p>
+<div class="row">
+    <div class="col-md-6">
+        <img src="../img/gallery/drekar/VDE_Scaling_Time_to_Solution.png" alt="" width="100%">
+    </div>
+    <div class="col-md-6">
+        <img src="../img/gallery/drekar/VDE_Scaling_speedup.png" alt="" width="92%">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="../img/gallery/drekar/VDE_Scaling_efficiency.png" alt="" width="100%">
+    </div>
+    <div class="col-md-6">
+        <img src="../img/gallery/drekar/VDE_Scaling_Iteration_count.png" alt="" width="97%">
+    </div>
+</div>
+<p><em>Strong scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for two Lundquist numbers, $S = 10^4,\ 10^7$. The results show excellent strong scaling and demonstrate that up to as few as 300 elements per processor the fully-implicit formulation scales well for this cold VDE simulation.</em></p>
+<h3 id="weak-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Weak scaling of fully implicit VMS resistive MHD formulation</h3>
+<p>Next we have weak scaling plotted in this figure. The weak-scaling tests were done with both a Lundquist number $S = 10^4$  and $S = 10^7$. The time-step size was limited by both a max Alfven wave $CFL_A = 400$ and a max flow $CFL_u = 2.0$ resulting in approximate average time-step sizes of 1.2, 0.55, and 0.25 global Alfven times for the respective mesh sizes. The simulation was run to 50 global Alfven times. The smallest mesh contained 346,272 elements (7.2K poloidal 48 toroidal), with 3,876,048 unknowns and was run on 108 cores. The next mesh contained 2,770,176 elements (28.8K poloidal 96 toroidal), with 30,739,104 unknowns and was run on 864 cores. The largest mesh contained 22,161,408 elements (115.2K poloidal 192 toroidal), with 244,842,048 unknowns and was run on 6912 cores. This weak Scaling shows that the very good scaling of the approximate block multiphysics preconditioner and Schur complement approximations Are capturing the required unresolved fast physics.</p>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <img src="../img/gallery/drekar/VDE_Weak_scaling.png" alt="" width="90%">
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<p><em>Weak scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for two Lundquist numbers, $S = 10^4,\ 10^7$. The results show excellent week scaling and demonstrate that up to 6912 processors the fully-implicit formulation scales well for this cold VDE simulation.</em></p>
+<h3 id="lundquist-number-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Lundquist number scaling of fully implicit VMS resistive MHD formulation</h3>
+<p>Finally, the scaling of the iterative solver with respect to the Lundquist number is shown. The time-step size was limited by a max Alfven wave $CFL_A = 400$ and a max flow $CFF_u= 2$, and was run to 25 global Alfven times, resulting in an average time-step size of $dt =1.2$. The mesh has 346,272 elements, and was run on 896 ARM cores. These results indicates that the fully-implicit formulation and approximate block preconditioners are robust with respect to increasing Lundquist numbers over this large $10^8$ increase.</p>
+<div class="row">
+    <div class="col-md-10">
+        <img src="../img/gallery/drekar/Lundquist_number_Scaling.png" alt="" width="90%">
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<p><em>Lundquist number scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for a fixed mesh size. The results show excellent scaling and demonstrate that up to $S=10^{12}$.</em></p>
 <hr />
 <h2 id="highlight-on-multifluid-em-plasma-simulations-for-disruption-mitigation-techniques-preliminary-results">Highlight on multifluid EM plasma simulations for disruption mitigation techniques (preliminary results)</h2>
 <p>Michael Crockatt(SNL), John Shadid(SNL), Roger Pawlowski(SNL), Sidafa Conde (SNL), Tom Smith (SNL), Sibu Mabuza (Clemson) </p>
