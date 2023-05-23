@@ -278,20 +278,6 @@ cross-coupled multiphysics hyperbolic interactions physics-based (PB) / approxim
 are used. These PB/ABF methods reduce the implicit solve for the complex coupled multifluid system into
 a set of sub-systems that segregate the physics (in the preconditioner only) for which we have demonstrated
 the use of scalable algebraic multilevel solvers. General details of these approaches can be found in <a href="https://doi.org/10.1016/j.cma.2016.01.019">VMS Incompressible MHD</a>, <a href="https://doi.org/10.1016/j.cam.2017.09.028">Fully-coupled AMG Resistive MHD</a>, <a href="https://doi.org/10.1137/12088879X">ABF 2D Reduced MHD</a>, <a href="https://doi.org/10.1137/15M1017946">Teko PB/ABF Preconditioning Package</a>.</p>
-<p>As an initial demonstration of the effectiveness of the PB/ABF approach
-to deal withe the off-diagonal coupling of the Alfven wave we show the solution statistics for increasing Alfven wave CFLs
-for a preliminary ITER VDE computational after a thermal quench.</p>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <img src="../img/gallery/drekar/VMS_ResistiveMHD_Alfven_Wave_CFL_Scaling_ABF.png" alt="" width="100%">
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<p><em>The table presents the number of time steps (nT), the average number of nonlinear Newton steps per time step (nL/nT),
-the average number of linear iterations per non-linear step (l,nL) and the average time per time step (t/nT) excluding IO.
-These preliminary results indicates that the proposed PB/ABF method has excellent algorithmic and time per time step scaling
-for increasing Alfven wave CFLs.</em></p>
 <h3 id="strong-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Strong scaling of fully implicit VMS resistive MHD formulation</h3>
 <p>We now consider a heterogeneous geometry consisting of the plasma region ITER geometry as well as the surrounding solid wall. These figures demonstrate the strong scaling of the implementation for two Lundquist numbers $10^4$, $10^7$.
 The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) and run to 100 global Alfven times with a constant time-step size dt = 2. This results in a max Alfven wave $CFL_A=750$ and max flow $CFL_u ={3}/{2}$. The number of cores is increased from 72 cores to 4680 cores, a 16x increase. The tests start with around 4800 elements per core with 72 cores, and end with around 300 elements per core with 1152 cores. The strong scaling begins to to become less efficient after approx. 300 elements per core done on 1152 cores. This is to be expected with so little work per core and with increasing cost for communication. The total time to solution, the speedup, efficiency and the iteration count for the solver are all presented. This scaling is excellent for a fully-implicit resistive MHD formulation with 300 elements per processor at the 1152 core case. The linear solver iteration results also demonstrate that the V-cycle coarse grid projection operators and coarse smoothers, and coarse grid solver are working as required as the processor count / sub-domains are increasing. It should be noted that a slightly more expensive smoother was used for the $S=10^7$ case.</p>
