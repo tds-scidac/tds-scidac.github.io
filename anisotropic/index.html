@@ -238,6 +238,13 @@
             <li><a href="#result">Result</a></li>
         
     
+        <li class="main "><a href="#anisotropic-transport-on-general-meshes-using-finite-elements">Anisotropic Transport on General Meshes using Finite Elements</a></li>
+        
+            <li><a href="#overview_1">Overview</a></li>
+        
+            <li><a href="#result_1">Result</a></li>
+        
+    
     </ul>
 </div>
 
@@ -268,6 +275,23 @@
     Sorry, your browser doesn't support embedded videos.
 </video>
 <p><em>Movie of a full reconnection event induced by a (1,1) kink instability of a Bennet pinch equilibrium in helical geometry with $\chi_\parallel/\chi_\perp \sim 10^{7}$.</em></p>
+<h1 id="anisotropic-transport-on-general-meshes-using-finite-elements">Anisotropic Transport on General Meshes using Finite Elements</h1>
+<p>Golo Wimmer (LANL), Ben Southworth (LANL), Thomas Gregory (Imperial College London), Xianzhu Tang (LANL)</p>
+<p><strong>LA-UR-23-25763. Approved for public release; distribution is unlimited.</strong></p>
+<h2 id="overview_1">Overview</h2>
+<ul>
+<li>As an alternative to considering cross-fluxes as above, one can consider the heat flux along magnetic fields as an advection operator. In the context of finite element methods, this has been explored e.g. in [S. Gunter et al., J. Comp. Phys. 226.2 (2007)], with temperature as a continuous Galerkin (CG) finite element field, and parallel heat flux as a discontinous Galerkin (DG) field. Building on this work, we devised an upwind-stabilized mixed DG finite element discretization in [G. Wimmer, B. Southworth, G. Gregory, arXiv:2301.13351 (2023)].</li>
+<li>The mixed DG system of equations can be reordered to better reflect the anisotropic diffusion term as a combination of two advection operators (parallel heat flux as transport of temperature along magnetic field, and transport of parallel heat flux along magnetic field). The two advection operators can then be solved using AIR, an algebraic multigrid method designed for advection problems [T.A. Manteuffel et al., SIAM J. Sci. Comp., 41(5) (2019), T.A. Manteuffel et al., SIAM J. Sci. Comp., 40(6) (2018)]. AIR works well in particular for upwind-stabilized DG advection discretizations, reflecting a discretization design in which accuracy and efficiency are carefully considered in concurrence.</li>
+<li>As a finite element method, the discretization works for arbitrary orders and general tokamak geometries.</li>
+<li>The published work in [G. Wimmer, B. Southworth, G. Gregory, arXiv:2301.13351 (2023)] is restricted to open magnetic field lines. Work on scenarios including closed field lines is currently underway (see tokamak scenario below).</li>
+</ul>
+<h2 id="result_1">Result</h2>
+<p><img alt="" src="../img/gallery/GW_Closed.png" />
+<em>Spatial convergence and solver efficiency, for 3D extension of anisotropic heat flux test case of NIMROD MHD code publication [R. Sovinec et al., J. Comp. Phys.195 (2004)]. For the efficiency plot (right), the test case contains closed field lines only (see [G. Wimmer, B. Southworth, G. Gregory, arXiv:2301.13351 (2023)]). In the left convergence plot -- run at anisotropy ratio $10^9$, using non-field aligned prism cells -- orange denotes our new upwind-stabilized mixed DG scheme, green the mixed scheme of [S. Gunter et al., J. Comp. Phys. 226.2 (2007)], and red and purple denote direct CG and DG (using an interior penalty method) discretizations, respectively. In the right plot, purple denotes the new, AIR-based solver strategy, while red denotes a standard solver approach for the mixed scheme of [S. Gunter et al., J. Comp. Phys. 226.2 (2007)] using classical AMG. Solid and dashed lines denote two spatial refinement levels, where solid corresponds to half the resolution of dashed.</em></p>
+<p><img alt="" src="../img/gallery/GW_Open.png" />
+<em>Anisotropic heat flux equation solved for a temperature/magnetic field configuration corresponding to an MHD equilibrium, using non-dimensionalized quantities and a physically realistic parallel conductivity. When no perpendicular conductivity is used, the solution should be steady state, and any loss in temperature is due to spurious cross diffusion. At 1000 Alfven times, standard finite element methods such [S. Gunter et al., J. Comp. Phys. 226.2 (2007)] suffer a large loss, while the new method of [G. Wimmer, B. Southworth, G. Gregory, arXiv:2301.13351 (2023)] maintains the core temperature well.</em></p>
+<p><img alt="" src="../img/gallery/GW_Open_data.png" />
+<em>Additional data for the above anisotropic heat flux equation in a realistic tokamak configuration. The left plot depicts the plasma cooling due to spurious cross diffusion, with [S. Gunter et al., J. Comp. Phys. 226.2 (2007)] in dashed purple, and the new discretization [G. Wimmer, B. Southworth, G. Gregory, arXiv:2301.13351 (2023)] in dotted red for first polynomial order DG finite element space, dash-dotted green for second polynomial order DG space. Standard discretizations lead to a cooling rate of 40\% or more, while for the second order new method, it is less than 5\%. The right table depicts the number of solver iterations per time step, as well as a relative error, for three different poloidal spatial refinements (the coarsest one depicted above). The new, AIR-based solver retains a low iteration count, while a standard solver approach with classical AMG quickly becomes impractical. In ongoing work, we aim to reduce the iteration count of our new method further.</em></p>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script></div>
             <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
@@ -278,6 +302,13 @@
             <li><a href="#overview">Overview</a></li>
         
             <li><a href="#result">Result</a></li>
+        
+    
+        <li class="main "><a href="#anisotropic-transport-on-general-meshes-using-finite-elements">Anisotropic Transport on General Meshes using Finite Elements</a></li>
+        
+            <li><a href="#overview_1">Overview</a></li>
+        
+            <li><a href="#result_1">Result</a></li>
         
     
     </ul>
