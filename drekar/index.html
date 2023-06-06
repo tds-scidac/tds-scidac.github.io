@@ -288,18 +288,22 @@ and for magnetics (magnetic fields and a Lagrange multiplier to enforce the sole
     </div>
     <div class="col-md-2"></div>
 </div>
+
 <p><em>Unstructured FE hex mesh of ITER plasma domain and solid wall using Cubit. Cubit provides both all hexahedron and tetrahedron capabilities. Capabilities for automatic uniform refinement and parallel portioning are available. As well soon a uniform refinement that snaps the element edges to the geometry will also be available.</em></p>
 <div class="col-md-4">
     <img src="../img/gallery/drekar/Iter_plasma_domain_cross_section.png" alt="" width="100%">
 </div>
+
 <div class="col-md-8">
     <img src="../img/gallery/drekar/3D_ITER_Plasma_Region_Mesh_psi.png" alt="" width="100%">
 </div>
+
 <p><em>Visualization of the unstructured FE mesh of poloidal cross-section using Cubit. A multiple iso-surface plot of Psi initial condition in the 3D mesh with the solid 1st wall.</em></p>
 <video controls preload="metadata" width="100%">
     <source src="../img/gallery/drekar/VDE_movie.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
+
 <p><em>An initial VDE simulation on 3D ITER geometry usign a VMS compressible resistive MHD formulation in Drekar.</em></p>
 <hr />
 <h2 id="scaling-of-multilevel-preconditioners-for-resistive-mhd-based-on-multiphysics-block-preconditioning-preliminary-results">Scaling of Multilevel Preconditioners for resistive MHD based on multiphysics block preconditioning (preliminary results)</h2>
@@ -315,7 +319,7 @@ a set of sub-systems that segregate the physics (in the preconditioner only) for
 the use of scalable algebraic multilevel solvers. General details of these approaches can be found in <a href="https://doi.org/10.1016/j.cma.2016.01.019">VMS Incompressible MHD</a>, <a href="https://doi.org/10.1016/j.cam.2017.09.028">Fully-coupled AMG Resistive MHD</a>, <a href="https://doi.org/10.1137/12088879X">ABF 2D Reduced MHD</a>, <a href="https://doi.org/10.1137/15M1017946">Teko PB/ABF Preconditioning Package</a>.</p>
 <p>As an initial demonstration of the effectiveness of the PB/ABF approach
 to deal withe the off-diagonal coupling of the Alfven wave we show the solution statistics for increasing Alfven wave CFLs
-for a preliminary ITER VDE computational after a thermal quench.</p>
+for a preliminary ITER VDE computational after a thermal quench.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -323,7 +327,7 @@ for a preliminary ITER VDE computational after a thermal quench.</p>
     </div>
     <div class="col-sm-3"></div>
 </div>
-<p><em>The table presents the number of time steps (nT), the average number of nonlinear Newton steps per time step (nL/nT),
+<em>The table presents the number of time steps (nT), the average number of nonlinear Newton steps per time step (nL/nT),
 the average number of linear iterations per non-linear step (l,nL) and the average time per time step (t/nT) excluding IO.
 These preliminary results indicates that the proposed PB/ABF method has excellent algorithmic and time per time step scaling
 for increasing Alfven wave CFLs.</em></p>
@@ -338,6 +342,7 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
         <img src="../img/gallery/drekar/VDE_Scaling_speedup.png" alt="" width="92%">
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-6">
         <img src="../img/gallery/drekar/VDE_Scaling_efficiency.png" alt="" width="100%">
@@ -346,6 +351,7 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
         <img src="../img/gallery/drekar/VDE_Scaling_Iteration_count.png" alt="" width="97%">
     </div>
 </div>
+
 <p><em>Strong scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for two Lundquist numbers, $S = 10^4,\ 10^7$. The results show excellent strong scaling and demonstrate that up to as few as 300 elements per processor the fully-implicit formulation scales well for this cold VDE simulation.</em></p>
 <h3 id="weak-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Weak scaling of fully implicit VMS resistive MHD formulation</h3>
 <p>Next we have weak scaling plotted in this figure. The weak-scaling tests were done with both a Lundquist number $S = 10^4$  and $S = 10^7$. The time-step size was limited by both a max Alfven wave $CFL_A = 400$ and a max flow $CFL_u = 2.0$ resulting in approximate average time-step sizes of 1.2, 0.55, and 0.25 global Alfven times for the respective mesh sizes. The simulation was run to 50 global Alfven times. The smallest mesh contained 346,272 elements (7.2K poloidal 48 toroidal), with 3,876,048 unknowns and was run on 108 cores. The next mesh contained 2,770,176 elements (28.8K poloidal 96 toroidal), with 30,739,104 unknowns and was run on 864 cores. The largest mesh contained 22,161,408 elements (115.2K poloidal 192 toroidal), with 244,842,048 unknowns and was run on 6912 cores. This weak Scaling shows that the very good scaling of the approximate block multiphysics preconditioner and Schur complement approximations Are capturing the required unresolved fast physics.</p>
@@ -356,6 +362,7 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
     </div>
     <div class="col-md-1"></div>
 </div>
+
 <p><em>Weak scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for two Lundquist numbers, $S = 10^4,\ 10^7$. The results show excellent week scaling and demonstrate that up to 6912 processors the fully-implicit formulation scales well for this cold VDE simulation.</em></p>
 <h3 id="lundquist-number-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Lundquist number scaling of fully implicit VMS resistive MHD formulation</h3>
 <p>Finally, the scaling of the iterative solver with respect to the Lundquist number is shown. The time-step size was limited by a max Alfven wave $CFL_A = 400$ and a max flow $CFF_u= 2$, and was run to 25 global Alfven times, resulting in an average time-step size of $dt =1.2$. The mesh has 346,272 elements, and was run on 896 ARM cores. These results indicates that the fully-implicit formulation and approximate block preconditioners are robust with respect to increasing Lundquist numbers over this large $10^8$ increase.</p>
@@ -365,6 +372,7 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
     </div>
     <div class="col-md-1"></div>
 </div>
+
 <p><em>Lundquist number scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for a fixed mesh size. The results show excellent scaling and demonstrate that up to $S=10^{12}$.</em></p>
 <hr />
 <h2 id="highlight-on-multifluid-em-plasma-simulations-for-disruption-mitigation-techniques-preliminary-results">Highlight on multifluid EM plasma simulations for disruption mitigation techniques (preliminary results)</h2>
@@ -382,9 +390,9 @@ employing scalable multifluid EM plasma models tractable for TDS, we are buildin
 algorithmic, and plasma-model developments by our team in the Drekar R&amp;D MHD and multi-fluid/EM
 code as a software-base. The overall structure of this model is given below.</p>
 <p><img src="../img/gallery/drekar/Multifluid_Equations.png" alt="" width="100%">
-<em>Five moment general multifluid model for atomic species s with collisional, ionization and recombination
+*Five moment general multifluid model for atomic species s with collisional, ionization and recombination
 terms included and coupled to a full electromagnetic Maxwell system. This model is implemented within the
-</em><em>Drekar</em><em> multiphysics code. </em><em>Drekar</em>* is an implicit/explicit (IMEX) scalable parallel unstructured FE code
+<strong>Drekar</strong> multiphysics code. <strong>Drekar</strong> is an implicit/explicit (IMEX) scalable parallel unstructured FE code
 that employs algebraic flux corrected stabilization methods for handling unresolved gradients and strong shock discontinuities. </p>
 <hr />
 <h2 id="an-illustration-of-a-two-dimensional-diocotron-instability-analytic-growth-rate-comparison">An illustration of a Two-dimensional diocotron instability – Analytic growth rate comparison</h2>
@@ -401,6 +409,7 @@ removes the cyclotron motion of the particles.</p>
     <source src="../img/gallery/drekar/diocotron-instability-2d_5_1e-3_elliptic-potential_000512_presentation.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
+
 <p><em>The movie shows the computed solution on a triagnular FE mesh for the case for the linear growth and saturation of the
 Instability. The two figures show the computed growth of the most unstable mode for both a full multifluid comptuation
 And a generalized Ohm’s law formulation in Drekar.</em></p>
@@ -408,6 +417,7 @@ And a generalized Ohm’s law formulation in Drekar.</em></p>
     <img src="../img/gallery/drekar/Multifluid_growth_rate.png" alt="" width="100%">
     <em>Multifluid growth rate vs mesh resolution</em>
 </div>
+
 <div class="col-md-6" style="text-align: center;">
     <img src="../img/gallery/drekar/Generalized_Ohm_law.png" alt="" width="100%">
     <em>Generalized Ohm's law without electron inertia</em>
@@ -457,6 +467,7 @@ jet expands through the edge/vacuum region and impacts a static Deuterium core.<
     <source src="../img/gallery/drekar/He_3e21_neutral_D_plasma_highorder_ndlimiter_1e15_cfl_20_2.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
+
 <p><em>Illustration of a 2D jet of high-density neutral Helium injected from a reservoir at n = $3\cdot 10^{21}\, m^{-3}$ expanding into the edge/vacuum region and impacting a static Deuterium plasma core.
 Here a strong breaking assumption is used on the charge species due to an imposed strong static magnetic field perpendicular to the jet injection direction.
 The simulation time is 5 ms and plots the linear (upper left) and logarithmic (lower left) mass density for all the species [kg/m^3],
@@ -468,6 +479,7 @@ He jet number density, 3.0e+21, 6.0e+21, 1.2e+22, 2.4e+22 [1/m^3]. These levels 
 ~100x, 200x, 400x, 800x the initial D+ nuclei content of the core plasma. Here the number density [1/m^3] is plotted. The problem set up is similar to E. Nardon et. al. (2017
 Nucl. Fusion 57 016027) for the injection of D2. Left full domain, right close-up of core region.</em></p>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script>
 
 <div class="footnote">
