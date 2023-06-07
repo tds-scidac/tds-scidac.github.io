@@ -23,6 +23,7 @@ nav:
   - 'Collisional-radiative modeling of disrupting plasma': cr.md
   - 'Kinetic modeling of plasma-wall and plasma-neutral interaction': sheath.md 
   - 'Multifluid modeling of plasma/neutral interaction': drekar-new.md
+  - 'Plasma-Material Interactions for Disruption Mitigation': plasmamaterials.md
   - 'Resistive MHD modeling of plasma instabilities and VDE': drekar-mhd.md
   - 'Integrated runaway modeling for current quench': RAMc.md
 - Computing:
