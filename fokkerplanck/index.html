@@ -39,7 +39,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="https://tds-scidac.github.io">TDS</a>
+            <a class="navbar-brand" href="https://tds-scidac.github.io/">TDS</a>
         </div>
 
         <script>var base_url = '..';</script>
@@ -112,6 +112,12 @@
                         
                             <li >
                                  <a href="../drekar-new/">Multifluid modeling of plasma/neutral interaction</a>
+                            </li>
+                        
+                    
+                        
+                            <li >
+                                 <a href="../plasmamaterials/">Plasma-Material Interactions for Disruption Mitigation</a>
                             </li>
                         
                     
@@ -264,16 +270,13 @@ We develop a scalable fully implicit solver with dynamic adaptivity. We develope
     <source src="../img/gallery/E_1.69chiu.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
-
 <p><em>The simulation demonstrates the critical need for AMR<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, in which 7 levels of refinement are used (corresponding to a 128 factor of resolution increase) to resolve both low-energy Maxwellian bulk and high-energy runaway tail. The dynamic AMR successfully captures the interaction between two structures and resolves a forming vortex structure. A delta-function-like Chiu source and practical collision parameters extracted from ITER are also deployed.</em></p>
 <video controls preload="metadata" width="100%">
     <source src="../img/gallery/dd-p4est.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
-
 <p><em>MPI Ranks are presented to demonstrate dynamic load balancing. Here 64 CPUs are used in this AMR run. Unlike the <a href="../mfem/">MFEM MHD</a> work which uses a Hilbert curve, here a "zig-zag" space filling curve is used which results into discontinuity in domain decompositions.</em></p>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script>
 
 <div class="footnote">
