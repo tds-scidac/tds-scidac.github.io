@@ -48,8 +48,6 @@ An ideal situation one can hope for would be the intriguing possibility that the
 </video>
 *Poincare section animation during the same Pixie3D simulation shown in the previous two videos. With quick thermal loss to the sheath boundary, temperature gradients steepen in the interior region, driving a (1,1) kink instability. After the instability saturates, all flux surfaces are broken and the magnetic topology is now stochastic. Periodically, small surfaces re-appear briefly before disappearing.*
 
-----
-
 [^1]: Jun Li, Yanzeng Zhang, and Xian-Zhu Tang. Staged cooling of a fusion-grade plasma in a tokamak thermal quench. Nuclear Fusion, 63(6):066030, May 2023.
 
 [^2]: Yuzhi Li, Bhuvana Srinivasan, Yanzeng Zhang, and Xian-Zhu Tang. Bohm criterion of plasma sheaths away from asymptotic limits. Phys. Rev. Lett., 128:085002, Feb 2022.
