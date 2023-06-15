@@ -17,6 +17,7 @@ nav:
 - Physics:
   - 'Control & flux surface destruction': cont-fmr.md
   - 'Nonlinear MHD leading into disruption': pixie3d.md
+  - 'Aligning thermal & current quenches with high density low-Z injection': pixiesheath.md
   - 'Thermal quench of core plasmas': gts.md
   - 'Thermal quench of edge/boundary plasmas': bout.md
   - 'Parallel transport physics of plasma thermal quench': TQ-VPIC.md
