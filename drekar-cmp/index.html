@@ -301,7 +301,6 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
         <img src="../img/gallery/drekar/VDE_Scaling_speedup.png" alt="" width="92%">
     </div>
 </div>
-
 <div class="row">
     <div class="col-md-6">
         <img src="../img/gallery/drekar/VDE_Scaling_efficiency.png" alt="" width="100%">
@@ -310,7 +309,6 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
         <img src="../img/gallery/drekar/VDE_Scaling_Iteration_count.png" alt="" width="97%">
     </div>
 </div>
-
 <p><em>Strong scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for two Lundquist numbers, $S = 10^4,\ 10^7$. The results show excellent strong scaling and demonstrate that up to as few as 300 elements per processor the fully-implicit formulation scales well for this cold VDE simulation.</em></p>
 <h3 id="weak-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Weak scaling of fully implicit VMS resistive MHD formulation</h3>
 <p>Next we have weak scaling plotted in this figure. The weak-scaling tests were done with both a Lundquist number $S = 10^4$  and $S = 10^7$. The time-step size was limited by both a max Alfven wave $CFL_A = 400$ and a max flow $CFL_u = 2.0$ resulting in approximate average time-step sizes of 1.2, 0.55, and 0.25 global Alfven times for the respective mesh sizes. The simulation was run to 50 global Alfven times. The smallest mesh contained 346,272 elements (7.2K poloidal 48 toroidal), with 3,876,048 unknowns and was run on 108 cores. The next mesh contained 2,770,176 elements (28.8K poloidal 96 toroidal), with 30,739,104 unknowns and was run on 864 cores. The largest mesh contained 22,161,408 elements (115.2K poloidal 192 toroidal), with 244,842,048 unknowns and was run on 6912 cores. This weak Scaling shows that the very good scaling of the approximate block multiphysics preconditioner and Schur complement approximations Are capturing the required unresolved fast physics.</p>
@@ -321,7 +319,6 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
     </div>
     <div class="col-md-1"></div>
 </div>
-
 <p><em>Weak scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for two Lundquist numbers, $S = 10^4,\ 10^7$. The results show excellent week scaling and demonstrate that up to 6912 processors the fully-implicit formulation scales well for this cold VDE simulation.</em></p>
 <h3 id="lundquist-number-scaling-of-fully-implicit-vms-resistive-mhd-formulation">Lundquist number scaling of fully implicit VMS resistive MHD formulation</h3>
 <p>Finally, the scaling of the iterative solver with respect to the Lundquist number is shown. The time-step size was limited by a max Alfven wave $CFL_A = 400$ and a max flow $CFF_u= 2$, and was run to 25 global Alfven times, resulting in an average time-step size of $dt =1.2$. The mesh has 346,272 elements, and was run on 896 ARM cores. These results indicates that the fully-implicit formulation and approximate block preconditioners are robust with respect to increasing Lundquist numbers over this large $10^8$ increase.</p>
@@ -331,7 +328,6 @@ The simulations use a mesh with 346, 272 elements (7.2K poloidal 48 toroidal) an
     </div>
     <div class="col-md-1"></div>
 </div>
-
 <p><em>Lundquist number scaling of the VMS unstructured FE low Mach number compressible MHD solver (Drekar) for a fixed mesh size. The results show excellent scaling and demonstrate that up to $S=10^{12}$.</em></p>
 <hr />
 <h2 id="scalable-multilfuid-em-solvers-based-on-multiphysics-block-preconditioning">Scalable multilfuid EM solvers based on multiphysics block preconditioning</h2>
@@ -356,7 +352,6 @@ capability for partially-ionized plasmas composed of multiple atomic species wit
 hydrodynamic transport processes, collisional, ionization and recombination interactions,
 and strong coupling to electric and magnetic fields.</p>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script></div>
             <div class="col-md-3 hidden-xs hidden-sm"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">

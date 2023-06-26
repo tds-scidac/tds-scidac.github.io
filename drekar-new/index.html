@@ -298,9 +298,9 @@ employing scalable multifluid EM plasma models tractable for TDS, we are buildin
 algorithmic, and plasma-model developments by our team in the Drekar R&amp;D MHD and multi-fluid/EM
 code as a software-base. The overall structure of this model is given below.</p>
 <p><img src="../img/gallery/drekar/Multifluid_Equations.png" alt="" width="100%">
-*Five moment general multifluid model for atomic species s with collisional, ionization and recombination
+<em>Five moment general multifluid model for atomic species s with collisional, ionization and recombination
 terms included and coupled to a full electromagnetic Maxwell system. This model is implemented within the
-<strong>Drekar</strong> multiphysics code. <strong>Drekar</strong> is an implicit/explicit (IMEX) scalable parallel unstructured FE code
+</em><em>Drekar</em><em> multiphysics code. </em><em>Drekar</em>* is an implicit/explicit (IMEX) scalable parallel unstructured FE code
 that employs algebraic flux corrected stabilization methods for handling unresolved gradients and strong shock discontinuities. </p>
 <hr />
 <h2 id="an-illustration-of-a-two-dimensional-diocotron-instability-analytic-growth-rate-comparison">An illustration of a Two-dimensional diocotron instability – Analytic growth rate comparison</h2>
@@ -317,7 +317,6 @@ removes the cyclotron motion of the particles.</p>
     <source src="../img/gallery/drekar/diocotron-instability-2d_5_1e-3_elliptic-potential_000512_presentation.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
-
 <p><em>The movie shows the computed solution on a triagnular FE mesh for the case for the linear growth and saturation of the
 Instability. The two figures show the computed growth of the most unstable mode for both a full multifluid comptuation
 And a generalized Ohm’s law formulation in Drekar.</em></p>
@@ -325,7 +324,6 @@ And a generalized Ohm’s law formulation in Drekar.</em></p>
     <img src="../img/gallery/drekar/Multifluid_growth_rate.png" alt="" width="100%">
     <em>Multifluid growth rate vs mesh resolution</em>
 </div>
-
 <div class="col-md-6" style="text-align: center;">
     <img src="../img/gallery/drekar/Generalized_Ohm_law.png" alt="" width="100%">
     <em>Generalized Ohm's law without electron inertia</em>
@@ -354,7 +352,6 @@ jet expands through the edge/vacuum region and impacts a static Deuterium core.<
     <source src="../img/gallery/drekar/He_3e21_neutral_D_plasma_highorder_ndlimiter_1e15_cfl_20_2.mp4" type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
-
 <p><em>Illustration of a 2D jet of high-density neutral Helium injected from a reservoir at n = $3\cdot 10^{21}\, m^{-3}$ expanding into the edge/vacuum region and impacting a static Deuterium plasma core.
 Here a strong breaking assumption is used on the charge species due to an imposed strong static magnetic field perpendicular to the jet injection direction.
 The simulation time is 5 ms and plots the linear (upper left) and logarithmic (lower left) mass density for all the species [kg/m^3],
@@ -366,7 +363,6 @@ He jet number density, 3.0e+21, 6.0e+21, 1.2e+22, 2.4e+22 [1/m^3]. These levels 
 ~100x, 200x, 400x, 800x the initial D+ nuclei content of the core plasma. Here the number density [1/m^3] is plotted. The problem set up is similar to E. Nardon et. al. (2017
 Nucl. Fusion 57 016027) for the injection of D2. Left full domain, right close-up of core region.</em></p>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {equationNumbers: {autoNumber: "all"}}, tex2jax: {inlineMath: [['$','$']]}});</script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"></script>
 
 <div class="footnote">
