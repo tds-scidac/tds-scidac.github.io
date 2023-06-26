@@ -2,7 +2,7 @@
 
 Sandia National Laboratories + collaborators (LANL, FASTMATH, others)
 
-**SAND2022-3490 W. Approved for public release; distribution is unlimited.** 
+**SAND2022-3490 W. LA-UR-23-25947. Approved for public release; distribution is unlimited.** 
 
 ## Overview
 
@@ -52,7 +52,24 @@ and for magnetics (magnetic fields and a Lagrange multiplier to enforce the sole
 </video>
 *An initial VDE simulation on 3D ITER geometry usign a VMS compressible resistive MHD formulation in Drekar.*
 
+<video controls preload="metadata" width="100%" poster="../img/gallery/drekar/modes_image.jpg">
+    <source src="../img/gallery/drekar/modes.mp4" type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+*Pressure isosurface of 1,1-mode and 2,2-mode of an initial 1,1-kink mode simulation*
 
+<div class="col-md-3">
+</div>
+<div class="col-md-6">
+<video controls preload="metadata" width="100%">
+    <source src="../img/gallery/drekar/poincarePlot.mp4" type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</div>
+<div class="col-md-3">
+</div>
+<div class="clearfix"></div>
+<p style="text-align: center; font-style: italic;">Poincare plot of an initial 1,1-kink mode simulation leading to a major disruption</p>
 
 \bibliography
 
